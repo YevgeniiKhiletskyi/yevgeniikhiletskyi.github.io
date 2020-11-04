@@ -1,0 +1,31 @@
+.benefits-list {
+  display: flex;
+  margin-left: 3%;
+  margin-right: 4%;
+}
+
+.benefits-item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+
+  &::before {
+    content: url("/public_html/img/CHOCCO/benefits/combined.png");
+    position: absolute;
+    top: 50px;
+    right: 0;
+    transform: translateX(50%);
+  }
+
+  &:first-child {
+   padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}

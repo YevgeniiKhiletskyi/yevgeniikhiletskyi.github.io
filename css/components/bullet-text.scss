@@ -1,0 +1,47 @@
+.bullet-text {
+  display: flex;
+  width: 44%;
+  margin: 0px 39px 22px 7px;
+  margin-left: 81px;
+  justify-content: space-between;
+}
+
+.icon-bullet_leaves, .icon-bullet_auto, .icon-bullet_paper {
+  width: 140px;
+  font-size: 17px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-bullet_leaves::before {
+  display: flex;
+  width: 92px;
+  height: 33px;
+  align-items: flex-end;
+  content: url('../img/CHOCCO/icons/5.svg');
+  
+}
+
+.icon-bullet_auto::before {
+  display: flex;
+  width: 96px;
+  height: 33px;
+  align-items: flex-end;
+  margin-left: 11px;
+  content: url('../img/CHOCCO/icons/6.svg');
+}
+
+.icon-bullet_paper::before {
+  display: flex;
+  width: 62px;
+  height: 33px;
+  align-items: flex-end;
+  margin-left: 4px;
+  content: url('../img/CHOCCO/icons/4.svg');
+}
+
+.icon-bullet_leaves::before, .icon-bullet_auto::before, .icon-bullet_paper::before {
+  margin-right: 9px;
+}

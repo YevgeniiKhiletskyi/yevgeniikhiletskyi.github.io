@@ -1,0 +1,24 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  min-height: 650px;
+}
+
+.section-title {
+  color: #292929;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.title_green {
+  color: $darkGreen;
+}
+
+
+
+

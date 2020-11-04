@@ -1,0 +1,11 @@
+.benefits-section {
+  position: relative;
+  background: url("../img/CHOCCO/benefits-section/узор_лист_1.png") left top 57% no-repeat;
+
+  &::before {
+    content: url("../img/CHOCCO/benefits-section/малина_1.png");
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+  }
+}

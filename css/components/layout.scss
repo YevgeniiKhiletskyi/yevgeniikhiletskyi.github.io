@@ -1,0 +1,67 @@
+body {
+  font-family: 'Alegreya Sans', sans-serif;  
+  color: #fff;                      
+  font-size: $baseFontSize;                       
+  line-height: 1.42;                     
+  margin: 0;
+  -webkit-font-smoothing: antialiased; 
+  position: relative;  
+}
+
+body, html {
+  height: 100%;
+} 
+
+a {
+  color: inherit;  
+}
+
+table {
+  border-collapse: collapse;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  li {
+  list-style: none; 
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: $containerWidth +20px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: $containerWidth;
+  margin: 0 auto;
+  position: relative;
+}

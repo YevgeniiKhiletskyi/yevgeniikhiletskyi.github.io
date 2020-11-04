@@ -1,0 +1,561 @@
+@charset "UTF-8";
+@import url("../css/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap");
+/* line 1, components/layout.scss */
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.42;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  position: relative; }
+
+/* line 11, components/layout.scss */
+body, html {
+  height: 100%; }
+
+/* line 15, components/layout.scss */
+a {
+  color: inherit; }
+
+/* line 19, components/layout.scss */
+table {
+  border-collapse: collapse; }
+
+/* line 23, components/layout.scss */
+ul {
+  padding: 0;
+  margin: 0; }
+  /* line 26, components/layout.scss */
+  ul li {
+    list-style: none; }
+
+/* line 31, components/layout.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal; }
+
+/* line 36, components/layout.scss */
+p {
+  margin: 0;
+  padding: 0; }
+
+/* line 41, components/layout.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 45, components/layout.scss */
+img {
+  display: block;
+  width: 100%; }
+
+/* line 50, components/layout.scss */
+footer {
+  position: relative;
+  width: 100%; }
+
+/* line 55, components/layout.scss */
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 1120px;
+  min-height: 100%;
+  overflow: hidden; }
+
+/* line 63, components/layout.scss */
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative; }
+
+/* line 1, components/hero.scss */
+.hero {
+  background: url("../img/CHOCCO/hero/батончики.png") left 96% center no-repeat, url("../img/CHOCCO/hero/узор.png") right bottom no-repeat;
+  background-color: #61C4D9;
+  height: 100vh;
+  min-width: 650px; }
+
+/* line 1, components/container-logo.scss */
+.container-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  margin-bottom: 100px; }
+
+/* line 9, components/container-logo.scss */
+.header-logo {
+  display: flex;
+  align-items: center;
+  width: 74%; }
+
+/* line 15, components/container-logo.scss */
+.logo {
+  display: flex;
+  margin-left: 80px;
+  margin-right: 46px;
+  width: 52.3px;
+  height: 38px;
+  content: url("../img/CHOCCO/container-logo/logo.svg");
+  align-items: center; }
+
+/* line 25, components/container-logo.scss */
+.menu-header {
+  display: flex;
+  width: 96%; }
+
+/* line 30, components/container-logo.scss */
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between; }
+
+/* line 37, components/container-logo.scss */
+.menu-link {
+  text-decoration: none;
+  font-size: 18px; }
+
+/* line 42, components/container-logo.scss */
+.contacts-header {
+  display: flex;
+  width: 20%;
+  margin-right: 7%;
+  justify-content: flex-end; }
+
+/* line 49, components/container-logo.scss */
+.contacts-phone {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  text-decoration: none; }
+
+/* line 56, components/container-logo.scss */
+.contacts-phone::before {
+  content: url("../img/CHOCCO/container-logo/phone.png");
+  margin-right: 5px; }
+
+/* line 1, components/title.scss */
+.title {
+  display: flex;
+  align-items: flex-start;
+  width: 32%;
+  min-height: 300px;
+  flex-direction: column;
+  margin-left: 77px;
+  margin-bottom: 66px; }
+
+/* line 11, components/title.scss */
+.title-text {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 4px; }
+
+/* line 20, components/title.scss */
+.subtitle {
+  font-size: 21px;
+  font-style: normal;
+  line-height: 1.2;
+  margin-bottom: 30px; }
+
+/* line 1, components/btn.scss */
+.btn {
+  background: #f5170e;
+  border-radius: 35px;
+  padding: 17px 38px;
+  color: #ffffff;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 19px; }
+
+/* line 13, components/btn.scss */
+.btn:hover {
+  background: #0b4d3c;
+  color: #fff;
+  transition: 0.3s; }
+
+/* line 19, components/btn.scss */
+.btn-white {
+  background-color: #fff;
+  color: #365A49; }
+
+/* line 1, components/bullet-text.scss */
+.bullet-text {
+  display: flex;
+  width: 44%;
+  margin: 0px 39px 22px 7px;
+  margin-left: 81px;
+  justify-content: space-between; }
+
+/* line 9, components/bullet-text.scss */
+.icon-bullet_leaves, .icon-bullet_auto, .icon-bullet_paper {
+  width: 140px;
+  font-size: 17px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+/* line 18, components/bullet-text.scss */
+.icon-bullet_leaves::before {
+  display: flex;
+  width: 92px;
+  height: 33px;
+  align-items: flex-end;
+  content: url("../img/CHOCCO/icons/5.svg"); }
+
+/* line 27, components/bullet-text.scss */
+.icon-bullet_auto::before {
+  display: flex;
+  width: 96px;
+  height: 33px;
+  align-items: flex-end;
+  margin-left: 11px;
+  content: url("../img/CHOCCO/icons/6.svg"); }
+
+/* line 36, components/bullet-text.scss */
+.icon-bullet_paper::before {
+  display: flex;
+  width: 62px;
+  height: 33px;
+  align-items: flex-end;
+  margin-left: 4px;
+  content: url("../img/CHOCCO/icons/4.svg"); }
+
+/* line 45, components/bullet-text.scss */
+.icon-bullet_leaves::before, .icon-bullet_auto::before, .icon-bullet_paper::before {
+  margin-right: 9px; }
+
+/* line 1, components/section.scss */
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  min-height: 650px; }
+
+/* line 9, components/section.scss */
+.section-title {
+  color: #292929;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px; }
+
+/* line 18, components/section.scss */
+.title_green {
+  color: #0b4d3c; }
+
+/* line 1, components/headline.scss */
+.headline {
+  text-align: center; }
+
+/* line 5, components/headline.scss */
+.headline-title {
+  color: #292929;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px; }
+
+/* line 15, components/headline.scss */
+.headline-subtitle {
+  color: #666666;
+  padding: 0 30%;
+  margin-bottom: 42px; }
+
+/* line 1, components/benefits.scss */
+.benefits-list {
+  display: flex;
+  margin-left: 3%;
+  margin-right: 4%; }
+
+/* line 7, components/benefits.scss */
+.benefits-item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative; }
+  /* line 12, components/benefits.scss */
+  .benefits-item::before {
+    content: url("/public_html/img/CHOCCO/benefits/combined.png");
+    position: absolute;
+    top: 50px;
+    right: 0;
+    transform: translateX(50%); }
+  /* line 20, components/benefits.scss */
+  .benefits-item:first-child {
+    padding-left: 0; }
+  /* line 24, components/benefits.scss */
+  .benefits-item:last-child {
+    padding-right: 0; }
+    /* line 27, components/benefits.scss */
+    .benefits-item:last-child::before {
+      display: none; }
+
+/* line 1, components/benefit.scss */
+.benefit {
+  text-align: center; }
+
+/* line 6, components/benefit.scss */
+.benefit-wrap {
+  display: inline-block;
+  width: 126px;
+  height: 126px;
+  position: relative;
+  background: #F2F5F4;
+  border-radius: 50%;
+  overflow: hidden; }
+
+/* line 16, components/benefit.scss */
+.benefit-icon {
+  width: 75px;
+  height: 69px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* line 25, components/benefit.scss */
+.benefit-desc {
+  color: #666666; }
+
+/* line 29, components/benefit.scss */
+.benefit-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #292929; }
+
+/* line 1, components/benefits-section.scss */
+.benefits-section {
+  position: relative;
+  background: url("../img/CHOCCO/benefits-section/узор_лист_1.png") left top 57% no-repeat; }
+  /* line 5, components/benefits-section.scss */
+  .benefits-section::before {
+    content: url("../img/CHOCCO/benefits-section/малина_1.png");
+    position: absolute;
+    bottom: -80px;
+    left: 0; }
+
+/* line 1, components/reviews.scss */
+.reviews-section {
+  position: relative;
+  background: url("../img/CHOCCO/reviews/ягода_3.png") right 5% top no-repeat; }
+  /* line 5, components/reviews.scss */
+  .reviews-section::before {
+    content: url("../img/CHOCCO/reviews/узор_1.png");
+    position: absolute;
+    bottom: -154px;
+    left: 0; }
+  /* line 12, components/reviews.scss */
+  .reviews-section::after {
+    content: url("../img/CHOCCO/reviews/ягоды_2.png");
+    position: absolute;
+    bottom: -80px;
+    left: 0; }
+
+/* line 21, components/reviews.scss */
+.reviews-display {
+  background: #F8FAF9 url("../img/CHOCCO/reviews/слой̆_2.png") right top no-repeat;
+  margin-left: 84px;
+  margin-right: 78px;
+  padding: 51px 78px 34px 44px;
+  overflow: hidden;
+  position: relative; }
+  /* line 29, components/reviews.scss */
+  .reviews-display::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: #ffff;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -65px; }
+
+/* line 43, components/reviews.scss */
+.reviews-display-inner {
+  display: flex; }
+
+/* line 47, components/reviews.scss */
+.reviews-avatar {
+  width: 254px;
+  height: 260px; }
+
+/* line 52, components/reviews.scss */
+.reviews-avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+/* line 58, components/reviews.scss */
+.reviews-content {
+  flex: 1;
+  margin-left: 20px; }
+
+/* line 63, components/reviews.scss */
+.reviews-title {
+  color: #292929;
+  margin-top: 9px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 18px; }
+
+/* line 71, components/reviews.scss */
+.reviews-text {
+  color: #666666;
+  line-height: 1.2;
+  margin-bottom: 26px;
+  padding: 0 108px 0 0; }
+
+/* line 78, components/reviews.scss */
+.reviews-author {
+  color: #292929;
+  font-size: 18px;
+  font-weight: bold; }
+
+/* line 84, components/reviews.scss */
+.reviews-list {
+  display: flex;
+  justify-content: center; }
+
+/* line 1, components/interactive-avatar.scss */
+.interactive-avatar {
+  width: 82px;
+  height: 82px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  overflow: hidden; }
+  /* line 8, components/interactive-avatar.scss */
+  .interactive-avatar_active {
+    border-color: #0f5a47; }
+
+/* line 13, components/interactive-avatar.scss */
+.interactive-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+/* line 1, components/border.scss */
+.border-section {
+  position: relative;
+  background: url("../img/CHOCCO/border/pattern.png") no-repeat; }
+  /* line 5, components/border.scss */
+  .border-section::before {
+    position: absolute;
+    content: url("../img/CHOCCO/border/ягода_2.png");
+    left: 3%;
+    bottom: 5%; }
+  /* line 12, components/border.scss */
+  .border-section::after {
+    content: url("../img/CHOCCO/border/лист_3.png");
+    position: absolute;
+    bottom: 5%;
+    right: 3%; }
+
+/* line 1, components/form.scss */
+.form {
+  display: flex;
+  color: #497870;
+  margin: 5% 7% 0 7%;
+  user-select: none; }
+
+/* line 8, components/form.scss */
+.form-col {
+  flex: 1;
+  margin-right: 20px; }
+  /* line 12, components/form.scss */
+  .form-col:last-child {
+    margin-right: 0; }
+
+/* line 17, components/form.scss */
+.form-row {
+  display: flex;
+  margin-bottom: 18px; }
+
+/* line 22, components/form.scss */
+.form-block {
+  flex: 1;
+  margin-right: 20px; }
+  /* line 26, components/form.scss */
+  .form-block:last-child {
+    margin-right: 0; }
+
+/* line 31, components/form.scss */
+.form-input {
+  width: 100%;
+  border: none;
+  padding: 18px 11px;
+  border-radius: 4px;
+  border: solid 3px transparent; }
+  /* line 38, components/form.scss */
+  .form-input_textarea {
+    height: 177px;
+    resize: none; }
+  /* line 43, components/form.scss */
+  .form-input:focus {
+    border-color: #DEE2BD;
+    border-radius: 4px;
+    outline: none; }
+
+/* line 50, components/form.scss */
+.form-controls {
+  display: flex;
+  flex-wrap: wrap; }
+
+/* line 1, components/radio.scss */
+.radio {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 10px; }
+  /* line 8, components/radio.scss */
+  .radio_checkbox .radio-visible {
+    border-radius: 0; }
+    /* line 11, components/radio.scss */
+    .radio_checkbox .radio-visible::before {
+      background: url("../img/CHOCCO/icons/checkmark.svg") center center no-repeat; }
+
+/* line 18, components/radio.scss */
+.radio-elem {
+  display: none; }
+  /* line 22, components/radio.scss */
+  .radio-elem:checked ~ .radio-visible::before {
+    display: block; }
+
+/* line 28, components/radio.scss */
+.radio-visible {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  border-radius: 50%;
+  background: #ffffff; }
+  /* line 35, components/radio.scss */
+  .radio-visible::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: #365A49;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+/* line 50, components/radio.scss */
+.radio-title {
+  padding-left: 10px;
+  padding-right: 23px; }
+
+/*# sourceMappingURL=main.css.map */

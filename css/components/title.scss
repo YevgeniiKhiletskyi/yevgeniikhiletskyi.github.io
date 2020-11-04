@@ -1,0 +1,26 @@
+.title {
+  display: flex;
+  align-items: flex-start;
+  width: 32%;
+  min-height: 300px;
+  flex-direction: column;
+  margin-left: 77px;
+  margin-bottom: 66px;
+}
+
+.title-text {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 21px;
+  font-style: normal;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
