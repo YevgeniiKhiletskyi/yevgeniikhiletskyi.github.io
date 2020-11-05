@@ -6,6 +6,9 @@ $blue: #61C4D9;
 $darkGreen: #0b4d3c;
 $green: #497870;
 
+//z-indexes
+$z-fixed-menu: 100;
+
 //normalize
 @import url("../css/normalize.css");
 
@@ -29,3 +32,4 @@ $green: #497870;
 @import "components/border.scss";
 @import "components/form.scss";
 @import "components/radio.scss";
+@import "components/fixed-menu.scss";

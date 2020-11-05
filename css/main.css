@@ -538,7 +538,8 @@ footer {
 /* line 50, components/form.scss */
 .form-controls {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-bottom: 40px; }
 
 /* line 1, components/radio.scss */
 .radio {
@@ -584,5 +585,39 @@ footer {
 .radio-title {
   padding-left: 10px;
   padding-right: 23px; }
+
+/* line 1, components/fixed-menu.scss */
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  z-index: 100; }
+
+/* line 8, components/fixed-menu.scss */
+.fixed-item {
+  margin-bottom: 5px; }
+  /* line 12, components/fixed-menu.scss */
+  .fixed-item_active .fixed-link {
+    border-color: #fff; }
+
+/* line 18, components/fixed-menu.scss */
+.fixed-link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative; }
+  /* line 26, components/fixed-menu.scss */
+  .fixed-link::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=main.css.map */
