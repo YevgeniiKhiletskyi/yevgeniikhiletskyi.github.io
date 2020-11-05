@@ -1,7 +1,37 @@
 .hero {
-  background: url("../img/CHOCCO/hero/батончики.png") left 96% center no-repeat, 
+  background:
+  url("../img/CHOCCO/hero/лист_1.png") left 96% bottom 35% no-repeat,
+  url("../img/CHOCCO/hero/ягоды_1.png") left 85% bottom 25% no-repeat,
+  //url("../img/CHOCCO/hero/батончики.png") left 96% center no-repeat, 
   url("../img/CHOCCO/hero/узор.png") right bottom no-repeat;
   background-color: $blue; 
   height: 100vh;
   min-width: 650px;
+  position: relative;
+
+
+  &::before {
+    content: url("../img/CHOCCO/hero/лист_2.png");
+    position: absolute;
+    bottom: -6%;
+    right: 15%;
+    
+  }
+
+  &::after {
+    content: url("../img/CHOCCO/hero/лист_3.png");
+    position: absolute;
+    bottom: -6%;
+    left: 7%;
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px 0 45px;
+  background: url("../img/CHOCCO/hero/батончики.png") right center / 50% auto no-repeat;
+
 }
