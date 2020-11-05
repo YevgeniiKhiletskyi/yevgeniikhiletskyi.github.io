@@ -1,22 +1,45 @@
 .btn {
-  background: #f5170e;
-  border-radius: 35px;
-  padding: 17px 38px;
-  color: #ffffff;
+  background: #fff;
+  color: $darkGreen;
+  font-size: 19px;
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 19px;
+  display: inline-block;
+  border: none;
+  border-radius: 35px;
+  padding: 17px 38px;
+
+    &:hover {
+      background: $darkGreen;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    &-green {
+    background: $darkGreen;
+    color: #fff;
+  
+    &:hover {
+      background: #fff;
+      color: $darkGreen;
+      transition: 0.3s;
+    }
+  }  
+
+  &-transparent {
+    background: transparent;
+    color: #000;
+    text-transform: none;
+    
+    &:hover {
+      background: transparent;
+      color: $darkGreen;
+      
+    }
+  }
 }
 
-.btn:hover {
-  background: $darkGreen;
-  color: #fff;
-  transition: 0.3s;
-}
 
-.btn-white {
-  background-color: #fff;
-  color: #365A49;
-}
+
