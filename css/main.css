@@ -186,26 +186,40 @@ footer {
 
 /* line 1, components/btn.scss */
 .btn {
-  background: #f5170e;
-  border-radius: 35px;
-  padding: 17px 38px;
-  color: #ffffff;
+  background: #fff;
+  color: #0b4d3c;
+  font-size: 19px;
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 19px; }
-
-/* line 13, components/btn.scss */
-.btn:hover {
-  background: #0b4d3c;
-  color: #fff;
-  transition: 0.3s; }
-
-/* line 19, components/btn.scss */
-.btn-white {
-  background-color: #fff;
-  color: #365A49; }
+  display: inline-block;
+  border: none;
+  border-radius: 35px;
+  padding: 17px 38px; }
+  /* line 14, components/btn.scss */
+  .btn:hover {
+    background: #0b4d3c;
+    color: #fff;
+    transition: 0.3s; }
+  /* line 20, components/btn.scss */
+  .btn-green {
+    background: #0b4d3c;
+    color: #fff; }
+    /* line 24, components/btn.scss */
+    .btn-green:hover {
+      background: #fff;
+      color: #0b4d3c;
+      transition: 0.3s; }
+  /* line 31, components/btn.scss */
+  .btn-transparent {
+    background: transparent;
+    color: #000;
+    text-transform: none; }
+    /* line 36, components/btn.scss */
+    .btn-transparent:hover {
+      background: transparent;
+      color: #0b4d3c; }
 
 /* line 1, components/bullet-text.scss */
 .bullet-text {
