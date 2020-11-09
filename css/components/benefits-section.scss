@@ -2,6 +2,10 @@
   position: relative;
   background: url("../img/CHOCCO/benefits-section/узор_лист_1.png") left top 57% no-repeat;
 
+  @include tablets {
+    background-position: left top 17%;
+  }
+
   &::before {
     content: url("../img/CHOCCO/benefits-section/малина_1.png");
     position: absolute;

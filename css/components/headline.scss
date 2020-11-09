@@ -16,6 +16,10 @@
   color: #666666;
   padding: 0 30%;
   margin-bottom: rem(42px);
+
+  @include tablets {
+    padding: 0 23%;
+  }
 }
 
 

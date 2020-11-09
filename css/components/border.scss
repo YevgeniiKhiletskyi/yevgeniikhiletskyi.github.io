@@ -1,12 +1,31 @@
 .border-section {
   background: 
-  url("../img/CHOCCO/border/лист_3.png") right 3% bottom 5% no-repeat,
-  url("../img/CHOCCO/border/ягода_2.png") left 3% bottom 5% no-repeat, 
+  //url("../img/CHOCCO/border/лист_3.png") right 3% bottom 5% no-repeat,
+  //url("../img/CHOCCO/border/ягода_2.png") left 3% bottom 5% no-repeat, 
   url("../img/CHOCCO/border/pattern.png") center center no-repeat;
   height: 100vh;
   min-width: rem(650px);
   
-
+  &::before {
+    content: 
+    url("../img/CHOCCO/border/лист_3.png");
+    right: 3%;
+    bottom: 5%;
+    position: absolute;
+  }
   
+  &::after {
+    content: 
+    url("../img/CHOCCO/border/ягода_2.png");
+    left: 3%;
+    bottom: 5%;
+    position: absolute;
+  }
+
+  &::before, &::after {
+    @include tablets {
+      display: none;
+    }
+  }
 }
 

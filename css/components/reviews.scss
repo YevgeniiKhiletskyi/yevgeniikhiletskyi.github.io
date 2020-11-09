@@ -19,12 +19,20 @@
 }
 
 .reviews-display {
-  background: #F8FAF9 url("../img/CHOCCO/reviews/слой̆_2.png") right top no-repeat;
+  background: url("../img/CHOCCO/reviews/слой_1.png") right top no-repeat;
+  background-color:  #F8FAF9;
   margin-left: rem(84px);
   margin-right: rem(78px);
   padding: rem(51px) rem(78px) rem(34px) rem(44px);
   overflow: hidden;
   position: relative;
+
+  @include tablets {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: rem(40px);
+    padding: rem(51px) rem(22px) rem(34px);
+  }
   
   &::before {
     content: "";
@@ -42,22 +50,65 @@
 
 .reviews-display-inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .reviews-avatar {
   width: rem(254px);
   height: rem(260px);
+
+  @include tablets {
+    width: rem(130px);
+    height: rem(132px);
+  }
 }
 
-.reviews-avatar-img {
+.reviews-avatar-img1 {
   object-fit: cover;
   width: 100%;
   height: 100%;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.reviews-avatar-img2 {
+  display: none;
+  
+  @include tablets {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;;
+  }
 }
 
 .reviews-content {
   flex: 1;
   margin-left: rem(20px);
+
+  &_block1 {
+
+    @include tablets {
+      display: none;
+    }
+  }
+}
+
+
+.reviews-content_block2 {
+  display: none;
+
+  @include tablets {
+    display: block;
+    flex: 1;
+  }
 }
 
 .reviews-title {
@@ -73,6 +124,10 @@
   line-height: 1.2;
   margin-bottom: rem(26px);
   padding: 0 rem(108px) 0 0;
+
+  @include tablets {
+    padding: 0;
+  }
 }
 
 .reviews-author {

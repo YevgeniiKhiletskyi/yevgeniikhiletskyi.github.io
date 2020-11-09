@@ -389,6 +389,10 @@ footer {
   color: #666666;
   padding: 0 30%;
   margin-bottom: 2.3333333333rem; }
+  @media screen and (max-width: 768px) {
+    /* line 15, components/headline.scss */
+    .headline-subtitle {
+      padding: 0 23%; } }
 
 /* line 1, components/benefits.scss */
 .benefits-list {
@@ -456,7 +460,11 @@ footer {
 .benefits-section {
   position: relative;
   background: url("../img/CHOCCO/benefits-section/узор_лист_1.png") left top 57% no-repeat; }
-  /* line 5, components/benefits-section.scss */
+  @media screen and (max-width: 768px) {
+    /* line 1, components/benefits-section.scss */
+    .benefits-section {
+      background-position: left top 17%; } }
+  /* line 9, components/benefits-section.scss */
   .benefits-section::before {
     content: url("../img/CHOCCO/benefits-section/малина_1.png");
     position: absolute;
@@ -482,13 +490,21 @@ footer {
 
 /* line 21, components/reviews.scss */
 .reviews-display {
-  background: #F8FAF9 url("../img/CHOCCO/reviews/слой̆_2.png") right top no-repeat;
+  background: url("../img/CHOCCO/reviews/слой_1.png") right top no-repeat;
+  background-color: #F8FAF9;
   margin-left: 4.6666666667rem;
   margin-right: 4.3333333333rem;
   padding: 2.8333333333rem 4.3333333333rem 1.8888888889rem 2.4444444444rem;
   overflow: hidden;
   position: relative; }
-  /* line 29, components/reviews.scss */
+  @media screen and (max-width: 768px) {
+    /* line 21, components/reviews.scss */
+    .reviews-display {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 2.2222222222rem;
+      padding: 2.8333333333rem 1.2222222222rem 1.8888888889rem; } }
+  /* line 37, components/reviews.scss */
   .reviews-display::before {
     content: "";
     position: absolute;
@@ -501,27 +517,66 @@ footer {
     transform: translateX(-50%);
     top: -3.6111111111rem; }
 
-/* line 43, components/reviews.scss */
+/* line 51, components/reviews.scss */
 .reviews-display-inner {
   display: flex; }
+  @media screen and (max-width: 768px) {
+    /* line 51, components/reviews.scss */
+    .reviews-display-inner {
+      flex-direction: column;
+      text-align: center;
+      align-items: center; } }
 
-/* line 47, components/reviews.scss */
+/* line 61, components/reviews.scss */
 .reviews-avatar {
   width: 14.1111111111rem;
   height: 14.4444444444rem; }
+  @media screen and (max-width: 768px) {
+    /* line 61, components/reviews.scss */
+    .reviews-avatar {
+      width: 7.2222222222rem;
+      height: 7.3333333333rem; } }
 
-/* line 52, components/reviews.scss */
-.reviews-avatar-img {
+/* line 71, components/reviews.scss */
+.reviews-avatar-img1 {
   object-fit: cover;
   width: 100%;
   height: 100%; }
+  @media screen and (max-width: 768px) {
+    /* line 71, components/reviews.scss */
+    .reviews-avatar-img1 {
+      display: none; } }
 
-/* line 58, components/reviews.scss */
+/* line 81, components/reviews.scss */
+.reviews-avatar-img2 {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    /* line 81, components/reviews.scss */
+    .reviews-avatar-img2 {
+      display: flex;
+      object-fit: cover;
+      width: 100%;
+      height: 100%; } }
+
+/* line 92, components/reviews.scss */
 .reviews-content {
   flex: 1;
   margin-left: 1.1111111111rem; }
+  @media screen and (max-width: 768px) {
+    /* line 96, components/reviews.scss */
+    .reviews-content_block1 {
+      display: none; } }
 
-/* line 63, components/reviews.scss */
+/* line 105, components/reviews.scss */
+.reviews-content_block2 {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    /* line 105, components/reviews.scss */
+    .reviews-content_block2 {
+      display: block;
+      flex: 1; } }
+
+/* line 114, components/reviews.scss */
 .reviews-title {
   color: #292929;
   margin-top: 0.5rem;
@@ -529,20 +584,24 @@ footer {
   font-weight: bold;
   margin-bottom: 1rem; }
 
-/* line 71, components/reviews.scss */
+/* line 122, components/reviews.scss */
 .reviews-text {
   color: #666666;
   line-height: 1.2;
   margin-bottom: 1.4444444444rem;
   padding: 0 6rem 0 0; }
+  @media screen and (max-width: 768px) {
+    /* line 122, components/reviews.scss */
+    .reviews-text {
+      padding: 0; } }
 
-/* line 78, components/reviews.scss */
+/* line 133, components/reviews.scss */
 .reviews-author {
   color: #292929;
   font-size: 1rem;
   font-weight: bold; }
 
-/* line 84, components/reviews.scss */
+/* line 139, components/reviews.scss */
 .reviews-list {
   display: flex;
   flex-wrap: wrap;
@@ -567,9 +626,25 @@ footer {
 
 /* line 1, components/border.scss */
 .border-section {
-  background: url("../img/CHOCCO/border/лист_3.png") right 3% bottom 5% no-repeat, url("../img/CHOCCO/border/ягода_2.png") left 3% bottom 5% no-repeat, url("../img/CHOCCO/border/pattern.png") center center no-repeat;
+  background: url("../img/CHOCCO/border/pattern.png") center center no-repeat;
   height: 100vh;
   min-width: 36.1111111111rem; }
+  /* line 9, components/border.scss */
+  .border-section::before {
+    content: url("../img/CHOCCO/border/лист_3.png");
+    right: 3%;
+    bottom: 5%;
+    position: absolute; }
+  /* line 17, components/border.scss */
+  .border-section::after {
+    content: url("../img/CHOCCO/border/ягода_2.png");
+    left: 3%;
+    bottom: 5%;
+    position: absolute; }
+  @media screen and (max-width: 768px) {
+    /* line 25, components/border.scss */
+    .border-section::before, .border-section::after {
+      display: none; } }
 
 /* line 1, components/form.scss */
 .form {
@@ -577,46 +652,55 @@ footer {
   color: #497870;
   margin: 5% 7% 0 7%;
   user-select: none; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/form.scss */
+    .form {
+      flex-direction: column;
+      padding: 0 4.1666666667rem; } }
 
-/* line 8, components/form.scss */
+/* line 13, components/form.scss */
 .form-col {
   flex: 1;
   margin-right: 1.1111111111rem; }
-  /* line 12, components/form.scss */
+  /* line 17, components/form.scss */
   .form-col:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    /* line 13, components/form.scss */
+    .form-col {
+      margin-right: 0; } }
 
-/* line 17, components/form.scss */
+/* line 26, components/form.scss */
 .form-row {
   display: flex;
   margin-bottom: 1rem; }
 
-/* line 22, components/form.scss */
+/* line 31, components/form.scss */
 .form-block {
   flex: 1;
   margin-right: 1.1111111111rem; }
-  /* line 26, components/form.scss */
+  /* line 35, components/form.scss */
   .form-block:last-child {
     margin-right: 0; }
 
-/* line 31, components/form.scss */
+/* line 40, components/form.scss */
 .form-input {
   width: 100%;
   border: none;
   padding: 1rem 0.6111111111rem;
   border-radius: 0.2222222222rem;
   border: solid 0.1666666667rem transparent; }
-  /* line 38, components/form.scss */
+  /* line 47, components/form.scss */
   .form-input_textarea {
     height: 9.8333333333rem;
     resize: none; }
-  /* line 43, components/form.scss */
+  /* line 52, components/form.scss */
   .form-input:focus {
     border-color: #DEE2BD;
     border-radius: 0.2222222222rem;
     outline: none; }
 
-/* line 50, components/form.scss */
+/* line 59, components/form.scss */
 .form-controls {
   display: flex;
   flex-wrap: wrap;

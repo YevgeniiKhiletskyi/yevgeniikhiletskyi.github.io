@@ -3,6 +3,11 @@
   color: $green;
   margin: 5% 7% 0 7%;
   user-select: none;
+
+  @include tablets {
+    flex-direction: column;
+    padding: 0 rem(75px);
+  }
 }
 
 .form-col {
@@ -10,6 +15,10 @@
   margin-right: rem(20px);
 
   &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets {
     margin-right: 0;
   }
 }
