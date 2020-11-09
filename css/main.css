@@ -2,109 +2,155 @@
 @import url("../css/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap");
 /* line 1, components/layout.scss */
+html {
+  font-size: 18px; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/layout.scss */
+    html {
+      font-size: 17px; } }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/layout.scss */
+    html {
+      font-size: 16px; } }
+
+/* line 13, components/layout.scss */
 body {
   font-family: 'Alegreya Sans', sans-serif;
   color: #fff;
-  font-size: 18px;
   line-height: 1.42;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   position: relative; }
 
-/* line 11, components/layout.scss */
+/* line 22, components/layout.scss */
 body, html {
   height: 100%; }
 
-/* line 15, components/layout.scss */
+/* line 26, components/layout.scss */
+.big-block {
+  height: 100vh;
+  width: 100vw;
+  background: #497870; }
+
+/* line 32, components/layout.scss */
+.section {
+  height: 100vh; }
+  /* line 35, components/layout.scss */
+  .section-1 {
+    background: blueviolet; }
+  /* line 39, components/layout.scss */
+  .section-2 {
+    background: orange; }
+  /* line 43, components/layout.scss */
+  .section-3 {
+    background: red; }
+  /* line 47, components/layout.scss */
+  .section-4 {
+    background: green; }
+
+/* line 52, components/layout.scss */
 a {
   color: inherit; }
 
-/* line 19, components/layout.scss */
+/* line 56, components/layout.scss */
 table {
   border-collapse: collapse; }
 
-/* line 23, components/layout.scss */
+/* line 60, components/layout.scss */
 ul {
   padding: 0;
   margin: 0; }
-  /* line 26, components/layout.scss */
+  /* line 63, components/layout.scss */
   ul li {
     list-style: none; }
 
-/* line 31, components/layout.scss */
+/* line 68, components/layout.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal; }
 
-/* line 36, components/layout.scss */
+/* line 73, components/layout.scss */
 p {
   margin: 0;
   padding: 0; }
 
-/* line 41, components/layout.scss */
+/* line 78, components/layout.scss */
 * {
   box-sizing: border-box; }
 
-/* line 45, components/layout.scss */
+/* line 82, components/layout.scss */
 img {
   display: block;
   width: 100%; }
 
-/* line 50, components/layout.scss */
+/* line 87, components/layout.scss */
 footer {
   position: relative;
   width: 100%; }
 
-/* line 55, components/layout.scss */
+/* line 92, components/layout.scss */
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 1120px;
+  min-width: 100%;
   min-height: 100%;
   overflow: hidden; }
 
-/* line 63, components/layout.scss */
+/* line 100, components/layout.scss */
 .container {
-  width: 1100px;
+  width: 95%;
+  max-width: 1100px;
   margin: 0 auto;
   position: relative; }
 
 /* line 1, components/hero.scss */
 .hero {
-  background: url("../img/CHOCCO/hero/лист_1.png") left 96% bottom 35% no-repeat, url("../img/CHOCCO/hero/ягоды_1.png") left 85% bottom 25% no-repeat, url("../img/CHOCCO/hero/узор.png") right bottom no-repeat;
+  background: url("../img/CHOCCO/hero/узор.png") right bottom no-repeat;
   background-color: #61C4D9;
   height: 100vh;
-  min-width: 650px;
+  min-width: 36.1111111111rem;
   position: relative; }
-  /* line 13, components/hero.scss */
+  @media screen and (max-width: 768px) {
+    /* line 1, components/hero.scss */
+    .hero {
+      background-position: right bottom 67%; } }
+  @media screen and (max-width: 768px) {
+    /* line 16, components/hero.scss */
+    .hero::before, .hero::after {
+      display: none; } }
+  /* line 22, components/hero.scss */
   .hero::before {
-    content: url("../img/CHOCCO/hero/group_5.png");
+    content: url("../img/CHOCCO/hero/group_6.png");
     position: absolute;
     bottom: -6%;
     right: 15%; }
-  /* line 21, components/hero.scss */
+  /* line 30, components/hero.scss */
   .hero::after {
     content: url("../img/CHOCCO/hero/лист_3.png");
     position: absolute;
     bottom: -6%;
     left: 7%; }
 
-/* line 29, components/hero.scss */
+/* line 38, components/hero.scss */
 .hero-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 45px;
+  padding: 1.3333333333rem 0 2.5rem;
   background: url("../img/CHOCCO/hero/батончики.png") right center/50% auto no-repeat; }
+  @media screen and (max-width: 768px) {
+    /* line 38, components/hero.scss */
+    .hero-container {
+      background: none; } }
 
 /* line 1, components/container-logo.scss */
 .container-logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 25px;
-  margin-bottom: 100px; }
+  padding-top: 1.3888888889rem;
+  margin-bottom: 5.5555555556rem; }
 
 /* line 9, components/container-logo.scss */
 .header-logo {
@@ -115,88 +161,119 @@ footer {
 /* line 15, components/container-logo.scss */
 .logo {
   display: flex;
-  margin-left: 80px;
-  margin-right: 46px;
-  width: 52.3px;
-  height: 38px;
+  margin-left: 4.4444444444rem;
+  margin-right: 2.5555555556rem;
+  width: 2.9055555556rem;
+  height: 2.1111111111rem;
   content: url("../img/CHOCCO/container-logo/logo.svg");
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    /* line 15, components/container-logo.scss */
+    .logo {
+      margin-left: 0; } }
 
-/* line 25, components/container-logo.scss */
+/* line 31, components/container-logo.scss */
 .menu-header {
   display: flex;
   width: 96%; }
+  @media screen and (max-width: 768px) {
+    /* line 31, components/container-logo.scss */
+    .menu-header {
+      display: none; } }
 
-/* line 30, components/container-logo.scss */
+/* line 40, components/container-logo.scss */
 .menu-list {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between; }
 
-/* line 37, components/container-logo.scss */
+/* line 47, components/container-logo.scss */
 .menu-link {
   text-decoration: none;
-  font-size: 18px; }
+  font-size: 1rem; }
 
-/* line 42, components/container-logo.scss */
+/* line 52, components/container-logo.scss */
 .contacts-header {
   display: flex;
   width: 20%;
   margin-right: 7%;
   justify-content: flex-end; }
 
-/* line 49, components/container-logo.scss */
+/* line 59, components/container-logo.scss */
 .contacts-phone {
   display: flex;
   align-items: center;
-  font-size: 24px;
+  font-size: 1.3333333333rem;
   text-decoration: none; }
 
-/* line 56, components/container-logo.scss */
+@media screen and (max-width: 768px) {
+  /* line 66, components/container-logo.scss */
+  .contacts-phone_header {
+    display: none; } }
+
+/* line 72, components/container-logo.scss */
 .contacts-phone::before {
   content: url("../img/CHOCCO/container-logo/phone.png");
-  margin-right: 5px; }
+  margin-right: 0.2777777778rem; }
 
 /* line 1, components/title.scss */
 .title {
   display: flex;
   align-items: flex-start;
   width: 32%;
-  min-height: 300px;
+  min-height: 16.6666666667rem;
   flex-direction: column;
-  margin-left: 77px;
-  margin-bottom: 66px; }
+  margin-left: 4.2777777778rem;
+  margin-bottom: 3.6666666667rem; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/title.scss */
+    .title {
+      width: 100%;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-left: 0; }
+      /* line 20, components/title.scss */
+      .title::before {
+        content: url("../img/CHOCCO/title/comp_1.png"); } }
 
-/* line 11, components/title.scss */
+/* line 26, components/title.scss */
 .title-text {
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-weight: bold;
   line-height: 1.2;
   font-style: normal;
   text-transform: uppercase;
-  margin-bottom: 4px; }
+  margin-bottom: 0.2222222222rem; }
 
-/* line 20, components/title.scss */
+/* line 35, components/title.scss */
 .subtitle {
-  font-size: 21px;
+  font-size: 1.1666666667rem;
   font-style: normal;
   line-height: 1.2;
-  margin-bottom: 30px; }
+  margin-bottom: 1.6666666667rem; }
+  @media screen and (max-width: 768px) {
+    /* line 35, components/title.scss */
+    .subtitle {
+      padding: 0 25%; } }
 
 /* line 1, components/btn.scss */
 .btn {
   background: #fff;
   color: #0b4d3c;
-  font-size: 19px;
+  font-size: 1.0555555556rem;
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   border: none;
-  border-radius: 35px;
-  padding: 17px 38px; }
+  border-radius: 1.9444444444rem;
+  padding: 0.9444444444rem 2.1111111111rem; }
   /* line 14, components/btn.scss */
   .btn:hover {
     background: #0b4d3c;
@@ -225,48 +302,52 @@ footer {
 .bullet-text {
   display: flex;
   width: 44%;
-  margin: 0px 39px 22px 7px;
-  margin-left: 81px;
+  margin: 0rem 2.1666666667rem 1.2222222222rem 0.3888888889rem;
+  margin-left: 4.5rem;
   justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/bullet-text.scss */
+    .bullet-text {
+      display: none; } }
 
-/* line 9, components/bullet-text.scss */
+/* line 13, components/bullet-text.scss */
 .icon-bullet_leaves, .icon-bullet_auto, .icon-bullet_paper {
-  width: 140px;
-  font-size: 17px;
+  width: 7.7777777778rem;
+  font-size: 0.9444444444rem;
   line-height: 1.2;
   display: flex;
   align-items: center;
   justify-content: space-between; }
 
-/* line 18, components/bullet-text.scss */
+/* line 22, components/bullet-text.scss */
 .icon-bullet_leaves::before {
   display: flex;
-  width: 92px;
-  height: 33px;
+  width: 5.1111111111rem;
+  height: 1.8333333333rem;
   align-items: flex-end;
   content: url("../img/CHOCCO/icons/5.svg"); }
 
-/* line 27, components/bullet-text.scss */
+/* line 31, components/bullet-text.scss */
 .icon-bullet_auto::before {
   display: flex;
-  width: 96px;
-  height: 33px;
+  width: 5.3333333333rem;
+  height: 1.8333333333rem;
   align-items: flex-end;
-  margin-left: 11px;
+  margin-left: 0.6111111111rem;
   content: url("../img/CHOCCO/icons/6.svg"); }
 
-/* line 36, components/bullet-text.scss */
+/* line 40, components/bullet-text.scss */
 .icon-bullet_paper::before {
   display: flex;
-  width: 62px;
-  height: 33px;
+  width: 3.4444444444rem;
+  height: 1.8333333333rem;
   align-items: flex-end;
-  margin-left: 4px;
+  margin-left: 0.2222222222rem;
   content: url("../img/CHOCCO/icons/4.svg"); }
 
-/* line 45, components/bullet-text.scss */
+/* line 49, components/bullet-text.scss */
 .icon-bullet_leaves::before, .icon-bullet_auto::before, .icon-bullet_paper::before {
-  margin-right: 9px; }
+  margin-right: 0.5rem; }
 
 /* line 1, components/section.scss */
 .section {
@@ -274,16 +355,16 @@ footer {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  min-height: 650px; }
+  min-height: 36.1111111111rem; }
 
 /* line 9, components/section.scss */
 .section-title {
   color: #292929;
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 25px; }
+  margin-bottom: 1.3888888889rem; }
 
 /* line 18, components/section.scss */
 .title_green {
@@ -296,18 +377,18 @@ footer {
 /* line 5, components/headline.scss */
 .headline-title {
   color: #292929;
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-weight: bold;
-  margin-bottom: 60px;
+  margin-bottom: 3.3333333333rem;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 25px; }
+  margin-bottom: 1.3888888889rem; }
 
 /* line 15, components/headline.scss */
 .headline-subtitle {
   color: #666666;
   padding: 0 30%;
-  margin-bottom: 42px; }
+  margin-bottom: 2.3333333333rem; }
 
 /* line 1, components/benefits.scss */
 .benefits-list {
@@ -325,7 +406,7 @@ footer {
   .benefits-item::before {
     content: url("/public_html/img/CHOCCO/benefits/combined.png");
     position: absolute;
-    top: 50px;
+    top: 2.7777777778rem;
     right: 0;
     transform: translateX(50%); }
   /* line 21, components/benefits.scss */
@@ -345,8 +426,8 @@ footer {
 /* line 6, components/benefit.scss */
 .benefit-wrap {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: 7rem;
+  height: 7rem;
   position: relative;
   background: #F2F5F4;
   border-radius: 50%;
@@ -354,8 +435,8 @@ footer {
 
 /* line 16, components/benefit.scss */
 .benefit-icon {
-  width: 75px;
-  height: 69px;
+  width: 4.1666666667rem;
+  height: 3.8333333333rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -367,7 +448,7 @@ footer {
 
 /* line 29, components/benefit.scss */
 .benefit-title {
-  font-size: 28px;
+  font-size: 1.5555555556rem;
   font-weight: bold;
   color: #292929; }
 
@@ -379,7 +460,7 @@ footer {
   .benefits-section::before {
     content: url("../img/CHOCCO/benefits-section/малина_1.png");
     position: absolute;
-    bottom: -80px;
+    bottom: -4.4444444444rem;
     left: 0; }
 
 /* line 1, components/reviews.scss */
@@ -390,21 +471,21 @@ footer {
   .reviews-section::before {
     content: url("../img/CHOCCO/reviews/узор_1.png");
     position: absolute;
-    bottom: -154px;
+    bottom: -8.5555555556rem;
     left: 0; }
   /* line 12, components/reviews.scss */
   .reviews-section::after {
     content: url("../img/CHOCCO/reviews/ягоды_2.png");
     position: absolute;
-    bottom: -80px;
+    bottom: -4.4444444444rem;
     left: 0; }
 
 /* line 21, components/reviews.scss */
 .reviews-display {
   background: #F8FAF9 url("../img/CHOCCO/reviews/слой̆_2.png") right top no-repeat;
-  margin-left: 84px;
-  margin-right: 78px;
-  padding: 51px 78px 34px 44px;
+  margin-left: 4.6666666667rem;
+  margin-right: 4.3333333333rem;
+  padding: 2.8333333333rem 4.3333333333rem 1.8888888889rem 2.4444444444rem;
   overflow: hidden;
   position: relative; }
   /* line 29, components/reviews.scss */
@@ -412,13 +493,13 @@ footer {
     content: "";
     position: absolute;
     display: block;
-    width: 90px;
-    height: 90px;
+    width: 5rem;
+    height: 5rem;
     background: #ffff;
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
-    top: -65px; }
+    top: -3.6111111111rem; }
 
 /* line 43, components/reviews.scss */
 .reviews-display-inner {
@@ -426,8 +507,8 @@ footer {
 
 /* line 47, components/reviews.scss */
 .reviews-avatar {
-  width: 254px;
-  height: 260px; }
+  width: 14.1111111111rem;
+  height: 14.4444444444rem; }
 
 /* line 52, components/reviews.scss */
 .reviews-avatar-img {
@@ -438,27 +519,27 @@ footer {
 /* line 58, components/reviews.scss */
 .reviews-content {
   flex: 1;
-  margin-left: 20px; }
+  margin-left: 1.1111111111rem; }
 
 /* line 63, components/reviews.scss */
 .reviews-title {
   color: #292929;
-  margin-top: 9px;
-  font-size: 30px;
+  margin-top: 0.5rem;
+  font-size: 1.6666666667rem;
   font-weight: bold;
-  margin-bottom: 18px; }
+  margin-bottom: 1rem; }
 
 /* line 71, components/reviews.scss */
 .reviews-text {
   color: #666666;
   line-height: 1.2;
-  margin-bottom: 26px;
-  padding: 0 108px 0 0; }
+  margin-bottom: 1.4444444444rem;
+  padding: 0 6rem 0 0; }
 
 /* line 78, components/reviews.scss */
 .reviews-author {
   color: #292929;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold; }
 
 /* line 84, components/reviews.scss */
@@ -469,9 +550,9 @@ footer {
 
 /* line 1, components/interactive-avatar.scss */
 .interactive-avatar {
-  width: 82px;
-  height: 82px;
-  border: 4px solid transparent;
+  width: 4.5555555556rem;
+  height: 4.5555555556rem;
+  border: 0.2222222222rem solid transparent;
   border-radius: 50%;
   overflow: hidden; }
   /* line 8, components/interactive-avatar.scss */
@@ -488,7 +569,7 @@ footer {
 .border-section {
   background: url("../img/CHOCCO/border/лист_3.png") right 3% bottom 5% no-repeat, url("../img/CHOCCO/border/ягода_2.png") left 3% bottom 5% no-repeat, url("../img/CHOCCO/border/pattern.png") center center no-repeat;
   height: 100vh;
-  min-width: 650px; }
+  min-width: 36.1111111111rem; }
 
 /* line 1, components/form.scss */
 .form {
@@ -500,7 +581,7 @@ footer {
 /* line 8, components/form.scss */
 .form-col {
   flex: 1;
-  margin-right: 20px; }
+  margin-right: 1.1111111111rem; }
   /* line 12, components/form.scss */
   .form-col:last-child {
     margin-right: 0; }
@@ -508,12 +589,12 @@ footer {
 /* line 17, components/form.scss */
 .form-row {
   display: flex;
-  margin-bottom: 18px; }
+  margin-bottom: 1rem; }
 
 /* line 22, components/form.scss */
 .form-block {
   flex: 1;
-  margin-right: 20px; }
+  margin-right: 1.1111111111rem; }
   /* line 26, components/form.scss */
   .form-block:last-child {
     margin-right: 0; }
@@ -522,31 +603,31 @@ footer {
 .form-input {
   width: 100%;
   border: none;
-  padding: 18px 11px;
-  border-radius: 4px;
-  border: solid 3px transparent; }
+  padding: 1rem 0.6111111111rem;
+  border-radius: 0.2222222222rem;
+  border: solid 0.1666666667rem transparent; }
   /* line 38, components/form.scss */
   .form-input_textarea {
-    height: 177px;
+    height: 9.8333333333rem;
     resize: none; }
   /* line 43, components/form.scss */
   .form-input:focus {
     border-color: #DEE2BD;
-    border-radius: 4px;
+    border-radius: 0.2222222222rem;
     outline: none; }
 
 /* line 50, components/form.scss */
 .form-controls {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 40px; }
+  padding-bottom: 2.2222222222rem; }
 
 /* line 1, components/radio.scss */
 .radio {
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-bottom: 10px; }
+  margin-bottom: 0.5555555556rem; }
   /* line 8, components/radio.scss */
   .radio_checkbox .radio-visible {
     border-radius: 0; }
@@ -563,16 +644,16 @@ footer {
 
 /* line 28, components/radio.scss */
 .radio-visible {
-  width: 26px;
-  height: 26px;
+  width: 1.4444444444rem;
+  height: 1.4444444444rem;
   position: relative;
   border-radius: 50%;
   background: #ffffff; }
   /* line 35, components/radio.scss */
   .radio-visible::before {
     content: "";
-    width: 14px;
-    height: 14px;
+    width: 0.7777777778rem;
+    height: 0.7777777778rem;
     background: #365A49;
     border-radius: 50%;
     position: absolute;
@@ -583,8 +664,8 @@ footer {
 
 /* line 50, components/radio.scss */
 .radio-title {
-  padding-left: 10px;
-  padding-right: 23px; }
+  padding-left: 0.5555555556rem;
+  padding-right: 1.2777777778rem; }
 
 /* line 1, components/fixed-menu.scss */
 .fixed-menu {
@@ -592,32 +673,87 @@ footer {
   top: 20%;
   right: 3%;
   z-index: 100; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/fixed-menu.scss */
+    .fixed-menu {
+      display: none; } }
 
-/* line 8, components/fixed-menu.scss */
+/* line 12, components/fixed-menu.scss */
 .fixed-item {
-  margin-bottom: 5px; }
-  /* line 12, components/fixed-menu.scss */
+  margin-bottom: 0.2777777778rem; }
+  /* line 16, components/fixed-menu.scss */
   .fixed-item_active .fixed-link {
     border-color: #fff; }
 
-/* line 18, components/fixed-menu.scss */
+/* line 22, components/fixed-menu.scss */
 .fixed-link {
-  width: 16px;
-  height: 16px;
+  width: 0.8888888889rem;
+  height: 0.8888888889rem;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 0.0555555556rem solid transparent;
   display: block;
   position: relative; }
-  /* line 26, components/fixed-menu.scss */
+  /* line 30, components/fixed-menu.scss */
   .fixed-link::before {
     content: "";
-    width: 6px;
-    height: 6px;
+    width: 0.3333333333rem;
+    height: 0.3333333333rem;
     border-radius: 50%;
     background: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+/* line 1, components/burger.scss */
+#burger {
+  background: transparent;
+  border: transparent;
+  width: 40px;
+  position: relative;
+  cursor: pointer;
+  display: none; }
+  /* line 10, components/burger.scss */
+  #burger:hover {
+    transform: scale(1.1);
+    transition: 1ms; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/burger.scss */
+    #burger {
+      display: block; } }
+
+/* line 20, components/burger.scss */
+.burger-span {
+  content: "";
+  height: 2px;
+  width: 35px;
+  display: block;
+  border: 1px solid #fff;
+  border-radius: 25%;
+  background: #fff; }
+  /* line 29, components/burger.scss */
+  .burger-span:before {
+    content: "";
+    height: 2px;
+    width: 35px;
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 25%;
+    background: #fff;
+    bottom: 10px;
+    left: 7px;
+    position: absolute; }
+  /* line 42, components/burger.scss */
+  .burger-span:after {
+    content: "";
+    height: 2px;
+    width: 35px;
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 25%;
+    background: #fff;
+    position: absolute;
+    top: 10px;
+    left: 7px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,25 +2,44 @@
   display: flex;
   align-items: flex-start;
   width: 32%;
-  min-height: 300px;
+  min-height: rem(300px);
   flex-direction: column;
-  margin-left: 77px;
-  margin-bottom: 66px;
+  margin-left: rem(77px);
+  margin-bottom: rem(66px);
+
+  @include tablets {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    
+    &::before {
+      content: url("../img/CHOCCO/title/comp_1.png");
+    }
+  }
 }
 
 .title-text {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: bold;
   line-height: 1.2;
   font-style: normal;
   text-transform: uppercase;
-  margin-bottom: 4px;
+  margin-bottom: rem(4px);
 }
 
 .subtitle {
-  font-size: 21px;
+  font-size: rem(21px);
   font-style: normal;
   line-height: 1.2;
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
+
+  @include tablets {
+    padding: 0 25%;
+  }
 }
 

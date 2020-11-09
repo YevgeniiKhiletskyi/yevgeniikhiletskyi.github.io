@@ -1,13 +1,21 @@
 $containerWidth: 1100px;
 $baseFontSize: 18px;
 
+//breacpoints
+$tablets: 768px;
+$phones: 480px;
+
 //colors
 $blue: #61C4D9;
 $darkGreen: #0b4d3c;
 $green: #497870;
 
+
 //z-indexes
 $z-fixed-menu: 100;
+
+//function
+@import "media.scss";
 
 //normalize
 @import url("../css/normalize.css");
@@ -33,3 +41,6 @@ $z-fixed-menu: 100;
 @import "components/form.scss";
 @import "components/radio.scss";
 @import "components/fixed-menu.scss";
+@import "components/burger.scss";
+//@import "components/item.scss";
+//@import "components/modal.scss";

@@ -1,7 +1,18 @@
+html {
+  font-size: $baseFontSize; 
+
+  @include tablets {
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include phones {
+    font-size: $baseFontSize - 2px;
+  }
+}
+
 body {
   font-family: 'Alegreya Sans', sans-serif;  
   color: #fff;                      
-  font-size: $baseFontSize;                       
   line-height: 1.42;                     
   margin: 0;
   -webkit-font-smoothing: antialiased; 
@@ -11,6 +22,32 @@ body {
 body, html {
   height: 100%;
 } 
+
+.big-block {
+  height: 100vh;
+  width: 100vw;
+  background: $green;
+}
+
+.section {
+  height: 100vh;
+
+  &-1 {
+    background: blueviolet;
+  }
+
+  &-2 {
+    background: orange;
+  }
+
+  &-3 {
+    background: red;
+  }
+
+  &-4 {
+    background: green;
+  }
+}
 
 a {
   color: inherit;  
@@ -55,13 +92,14 @@ footer {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: $containerWidth +20px;
+  min-width: 100%;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: $containerWidth;
+  width: 95%;
+  max-width: $containerWidth;
   margin: 0 auto;
   position: relative;
 }

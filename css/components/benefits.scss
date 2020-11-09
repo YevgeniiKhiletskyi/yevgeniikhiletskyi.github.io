@@ -13,7 +13,7 @@
   &::before {
     content: url("/public_html/img/CHOCCO/benefits/combined.png");
     position: absolute;
-    top: 50px;
+    top: rem(50px);
     right: 0;
     transform: translateX(50%);
   }

@@ -1,15 +1,15 @@
 .btn {
   background: #fff;
   color: $darkGreen;
-  font-size: 19px;
+  font-size: rem(19px);
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   border: none;
-  border-radius: 35px;
-  padding: 17px 38px;
+  border-radius: rem(35px);
+  padding: rem(17px) rem(38px);
 
     &:hover {
       background: $darkGreen;

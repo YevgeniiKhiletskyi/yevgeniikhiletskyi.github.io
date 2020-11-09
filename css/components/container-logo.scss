@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 25px;
-  margin-bottom: 100px;
+  padding-top: rem(25px);
+  margin-bottom: rem(100px);
 }
 
 .header-logo {
@@ -14,17 +14,27 @@
 
 .logo {
   display: flex;
-  margin-left: 80px;
-  margin-right: 46px;
-  width: 52.3px;
-  height: 38px;
+  margin-left: rem(80px);
+  margin-right: rem(46px);
+  width: rem(52.3px);
+  height: rem(38px);
   content: url("../img/CHOCCO/container-logo/logo.svg");  
   align-items: center;
+
+  @include tablets {
+    margin-left: 0;
+  }
 }
+
+
 
 .menu-header {
   display: flex;
   width: 96%;
+  
+  @include tablets {
+    display: none;
+  }
 }
 
 .menu-list {
@@ -36,7 +46,7 @@
 
 .menu-link {
   text-decoration: none;
-  font-size: 18px;
+  font-size: rem(18px);
 }
 
 .contacts-header {
@@ -49,11 +59,17 @@
 .contacts-phone {
   display: flex;
   align-items: center;
-  font-size: 24px;
+  font-size: rem(24px);
   text-decoration: none;
+}
+
+.contacts-phone_header{
+  @include tablets {
+    display: none;
+  }
 }
 
 .contacts-phone::before {
 content: url("../img/CHOCCO/container-logo/phone.png");
-margin-right: 5px;
+margin-right: rem(5px);
 }

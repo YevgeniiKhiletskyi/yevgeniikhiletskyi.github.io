@@ -5,7 +5,7 @@
   &::before {
     content: url("../img/CHOCCO/reviews/узор_1.png");
     position: absolute;
-    bottom: -154px;
+    bottom: rem(-154px);
     left: 0;
   }
 
@@ -13,16 +13,16 @@
     content:  
     url("../img/CHOCCO/reviews/ягоды_2.png");
     position: absolute;
-    bottom: -80px;
+    bottom: rem(-80px);
     left: 0;
   }
 }
 
 .reviews-display {
   background: #F8FAF9 url("../img/CHOCCO/reviews/слой̆_2.png") right top no-repeat;
-  margin-left: 84px;
-  margin-right: 78px;
-  padding: 51px 78px 34px 44px;
+  margin-left: rem(84px);
+  margin-right: rem(78px);
+  padding: rem(51px) rem(78px) rem(34px) rem(44px);
   overflow: hidden;
   position: relative;
   
@@ -30,13 +30,13 @@
     content: "";
     position: absolute;
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background: #ffff;
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
-    top: -65px;
+    top: rem(-65px);
   }
 }
 
@@ -45,8 +45,8 @@
 }
 
 .reviews-avatar {
-  width: 254px;
-  height: 260px;
+  width: rem(254px);
+  height: rem(260px);
 }
 
 .reviews-avatar-img {
@@ -57,27 +57,27 @@
 
 .reviews-content {
   flex: 1;
-  margin-left: 20px;
+  margin-left: rem(20px);
 }
 
 .reviews-title {
   color: #292929;
-  margin-top: 9px;
-  font-size: 30px;
+  margin-top: rem(9px);
+  font-size: rem(30px);
   font-weight: bold;
-  margin-bottom: 18px;
+  margin-bottom: rem(18px);
 }
 
 .reviews-text {
   color: #666666;
   line-height: 1.2;
-  margin-bottom: 26px;
-  padding: 0 108px 0 0;
+  margin-bottom: rem(26px);
+  padding: 0 rem(108px) 0 0;
 }
 
 .reviews-author {
   color: #292929;
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: bold;
 }
 
