@@ -6,10 +6,19 @@
     background-position: left top 17%;
   }
 
+  @include phones {
+   background: none;
+  }
+
   &::before {
     content: url("../img/CHOCCO/benefits-section/малина_1.png");
     position: absolute;
     bottom: rem(-80px);
     left: 0;
+
+    @include phones {
+      content: none;
+    }
   }
+
 }

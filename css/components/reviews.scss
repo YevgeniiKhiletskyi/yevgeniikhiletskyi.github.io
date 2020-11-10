@@ -2,6 +2,10 @@
   position: relative;
   background: url("../img/CHOCCO/reviews/ягода_3.png") right 5% top no-repeat;
 
+  @include phones {
+    background-position: right 1% top 1%;
+  }
+
   &::before {
     content: url("../img/CHOCCO/reviews/узор_1.png");
     position: absolute;
@@ -19,8 +23,7 @@
 }
 
 .reviews-display {
-  background: url("../img/CHOCCO/reviews/слой_1.png") right top no-repeat;
-  background-color:  #F8FAF9;
+  background: #F8FAF9 url("../img/CHOCCO/reviews/слой_1.png") right top no-repeat;
   margin-left: rem(84px);
   margin-right: rem(78px);
   padding: rem(51px) rem(78px) rem(34px) rem(44px);
@@ -28,9 +31,7 @@
   position: relative;
 
   @include tablets {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: rem(40px);
+    margin: 0 0 rem(40px);
     padding: rem(51px) rem(22px) rem(34px);
   }
   
@@ -45,6 +46,10 @@
     left: 50%;
     transform: translateX(-50%);
     top: rem(-65px);
+
+    @include phones {
+      display: none;
+    }
   }
 }
 

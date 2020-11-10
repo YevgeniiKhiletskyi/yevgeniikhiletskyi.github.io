@@ -1,0 +1,11 @@
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  min-height: rem(650px);
+
+  @include phones {
+    align-items: center;
+  }
+}

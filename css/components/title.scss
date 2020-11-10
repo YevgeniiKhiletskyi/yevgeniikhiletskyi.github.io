@@ -6,7 +6,7 @@
   flex-direction: column;
   margin-left: rem(77px);
   margin-bottom: rem(66px);
-
+  
   @include tablets {
     width: 100%;
     display: flex;
@@ -20,6 +20,16 @@
     &::before {
       content: url("../img/CHOCCO/title/comp_1.png");
     }
+    @include phones {
+      width: 100%;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-left: 0;
+    }
   }
 }
 
@@ -30,6 +40,13 @@
   font-style: normal;
   text-transform: uppercase;
   margin-bottom: rem(4px);
+
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 rem(20px);
+  }
 }
 
 .subtitle {
@@ -41,5 +58,10 @@
   @include tablets {
     padding: 0 25%;
   }
+
+  @include phones {
+    padding: 0 16%;
+  }
 }
+
 

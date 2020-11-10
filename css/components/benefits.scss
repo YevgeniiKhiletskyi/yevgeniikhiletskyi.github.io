@@ -3,12 +3,25 @@
   flex-wrap: wrap;
   margin-left: 3%;
   margin-right: 4%;
+
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
 }
 
 .benefits-item {
   flex: 1;
   padding: 0 3%;
   position: relative;
+
+  @include phones {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
 
   &::before {
     content: url("/public_html/img/CHOCCO/benefits/combined.png");
@@ -30,3 +43,4 @@
     }
   }
 }
+

@@ -12,6 +12,11 @@
     background-position: right bottom 67%;
   }
 
+  @include phones {
+    background-position: right bottom 67%;
+    min-width: 0;
+  }
+
   
   &::before, &::after {
     @include tablets {
@@ -45,6 +50,11 @@
 
   @include tablets {
     background: none;
+  }
+
+  @include phones {
+    padding: 0 0 rem(45px);
+  
   }
 
 }

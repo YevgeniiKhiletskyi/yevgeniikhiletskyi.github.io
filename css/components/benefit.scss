@@ -1,6 +1,10 @@
 .benefit {
   text-align: center;
 
+  @include phones {
+    text-align: start;
+  }
+
 }
 
 .benefit-wrap {
@@ -24,10 +28,18 @@
 
 .benefit-desc {
   color: #666666;
+
+  @include phones {
+    padding: 0 rem(25px) 0 rem(18px);
+  }
 }
 
 .benefit-title {
   font-size: rem(28px);
   font-weight: bold;
   color: #292929;
+
+  @include phones {
+    padding: 0 rem(18px);
+  }
 }

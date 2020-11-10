@@ -15,6 +15,10 @@
   @include tablets {
     display: block;
   }
+
+  @include phones {
+    display: block;
+  }
 }
 
 .burger-span{
