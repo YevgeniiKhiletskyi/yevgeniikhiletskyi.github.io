@@ -73,6 +73,10 @@
   display: flex;
   flex-wrap: wrap;
   padding-bottom: rem(40px);
+
+  @include phones {
+    padding-bottom: rem(15px);
+  }
 }
 
 .form-btns {

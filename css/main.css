@@ -807,9 +807,13 @@ footer {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 2.2222222222rem; }
+  @media screen and (max-width: 480px) {
+    /* line 72, components/form.scss */
+    .form-controls {
+      padding-bottom: 0.8333333333rem; } }
 
 @media screen and (max-width: 768px) {
-  /* line 78, components/form.scss */
+  /* line 82, components/form.scss */
   .form-btns {
     display: flex;
     justify-content: center; } }
