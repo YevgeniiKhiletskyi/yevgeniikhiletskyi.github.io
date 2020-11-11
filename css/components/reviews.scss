@@ -1,3 +1,12 @@
+.reviews {
+  @include phones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+  }
+}
+
 .reviews-section {
   position: relative;
   background: url("../img/CHOCCO/reviews/ягода_3.png") right 5% top no-repeat;
@@ -31,14 +40,20 @@
   position: relative;
 
   @include tablets {
+    display: flex;
     margin: 0 0 rem(40px);
     padding: rem(51px) rem(22px) rem(34px);
+  }
+
+  @include phones {
+    justify-content: flex-end;
+    margin: 0;
+    padding: rem(48px) rem(22px) rem(34px);
   }
   
   &::before {
     content: "";
     position: absolute;
-    display: block;
     width: rem(90px);
     height: rem(90px);
     background: #ffff;

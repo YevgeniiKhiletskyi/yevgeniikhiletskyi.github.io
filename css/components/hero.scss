@@ -1,7 +1,5 @@
 .hero {
   background:
-  //url("../img/CHOCCO/hero/лист_1.png") left 96% bottom 35% no-repeat,
-  //url("../img/CHOCCO/hero/ягоды_1.png") left 85% bottom 25% no-repeat,
   url("../img/CHOCCO/hero/узор.png") right bottom no-repeat;
   background-color: $blue; 
   height: 100vh;
@@ -51,10 +49,4 @@
   @include tablets {
     background: none;
   }
-
-  @include phones {
-    padding: 0 0 rem(45px);
-  
-  }
-
 }

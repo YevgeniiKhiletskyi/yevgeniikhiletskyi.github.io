@@ -4,9 +4,7 @@
   width: 32%;
   min-height: rem(300px);
   flex-direction: column;
-  margin-left: rem(77px);
-  margin-bottom: rem(66px);
-  
+    
   @include tablets {
     width: 100%;
     display: flex;
@@ -16,19 +14,12 @@
     align-items: center;
     text-align: center;
     margin-left: 0;
+    justify-content: flex-end;
+    background: url("../img/CHOCCO/title/comp_1.png")top 2% center / 61% auto no-repeat;
     
-    &::before {
-      content: url("../img/CHOCCO/title/comp_1.png");
-    }
     @include phones {
-      width: 100%;
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin-left: 0;
+      justify-content: flex-end;
+      background: url("../img/CHOCCO/title/comp_1.png")top 2% center / 61% auto no-repeat;
     }
   }
 }

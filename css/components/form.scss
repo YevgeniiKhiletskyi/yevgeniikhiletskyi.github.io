@@ -8,6 +8,11 @@
     flex-direction: column;
     padding: 0 rem(75px);
   }
+
+  @include phones {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .form-col {
@@ -44,9 +49,17 @@
   border-radius: rem(4px);
   border: solid rem(3px) transparent;
 
+  @include phones {
+    padding: 0;
+  }
+
   &_textarea {
     height: rem(177px);
     resize: none;
+
+    @include phones {
+      height: rem(75px);
+    }
   }
 
   &:focus {
@@ -60,4 +73,11 @@
   display: flex;
   flex-wrap: wrap;
   padding-bottom: rem(40px);
+}
+
+.form-btns {
+  @include tablets {
+    display: flex;
+    justify-content: center;
+  }
 }

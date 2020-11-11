@@ -32,76 +32,63 @@ body, html {
   width: 100vw;
   background: #497870; }
 
-/* line 32, components/layout.scss */
-.section {
-  height: 100vh; }
-  /* line 35, components/layout.scss */
-  .section-1 {
-    background: blueviolet; }
-  /* line 39, components/layout.scss */
-  .section-2 {
-    background: orange; }
-  /* line 43, components/layout.scss */
-  .section-3 {
-    background: red; }
-  /* line 47, components/layout.scss */
-  .section-4 {
-    background: green; }
-
-/* line 52, components/layout.scss */
+/* line 33, components/layout.scss */
 a {
   color: inherit; }
 
-/* line 56, components/layout.scss */
+/* line 37, components/layout.scss */
 table {
   border-collapse: collapse; }
 
-/* line 60, components/layout.scss */
+/* line 41, components/layout.scss */
 ul {
   padding: 0;
   margin: 0; }
-  /* line 63, components/layout.scss */
+  /* line 44, components/layout.scss */
   ul li {
     list-style: none; }
 
-/* line 68, components/layout.scss */
+/* line 49, components/layout.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal; }
 
-/* line 73, components/layout.scss */
+/* line 54, components/layout.scss */
 p {
   margin: 0;
   padding: 0; }
 
-/* line 78, components/layout.scss */
+/* line 59, components/layout.scss */
 * {
   box-sizing: border-box; }
 
-/* line 82, components/layout.scss */
+/* line 63, components/layout.scss */
 img {
   display: block;
   width: 100%; }
 
-/* line 87, components/layout.scss */
+/* line 68, components/layout.scss */
 footer {
   position: relative;
   width: 100%; }
 
-/* line 92, components/layout.scss */
+/* line 73, components/layout.scss */
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 100%;
   min-height: 100%;
   overflow: hidden; }
 
-/* line 100, components/layout.scss */
+/* line 80, components/layout.scss */
 .container {
   width: 95%;
-  max-width: 1100px;
+  max-width: 940px;
   margin: 0 auto;
   position: relative; }
+  @media screen and (max-width: 480px) {
+    /* line 80, components/layout.scss */
+    .container {
+      height: 100%; } }
 
 /* line 1, components/header.scss */
 .header-content {
@@ -132,23 +119,23 @@ footer {
       background-position: right bottom 67%;
       min-width: 0; } }
   @media screen and (max-width: 768px) {
-    /* line 21, components/hero.scss */
+    /* line 19, components/hero.scss */
     .hero::before, .hero::after {
       display: none; } }
-  /* line 27, components/hero.scss */
+  /* line 25, components/hero.scss */
   .hero::before {
     content: url("../img/CHOCCO/hero/group_6.png");
     position: absolute;
     bottom: -6%;
     right: 15%; }
-  /* line 35, components/hero.scss */
+  /* line 33, components/hero.scss */
   .hero::after {
     content: url("../img/CHOCCO/hero/лист_3.png");
     position: absolute;
     bottom: -6%;
     left: 7%; }
 
-/* line 43, components/hero.scss */
+/* line 41, components/hero.scss */
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -157,68 +144,66 @@ footer {
   padding: 1.3333333333rem 0 2.5rem;
   background: url("../img/CHOCCO/hero/батончики.png") right center/50% auto no-repeat; }
   @media screen and (max-width: 768px) {
-    /* line 43, components/hero.scss */
+    /* line 41, components/hero.scss */
     .hero-container {
       background: none; } }
-  @media screen and (max-width: 480px) {
-    /* line 43, components/hero.scss */
-    .hero-container {
-      padding: 0 0 2.5rem; } }
 
 /* line 1, components/container-logo.scss */
 .container-logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1.3888888889rem;
-  margin-bottom: 5.5555555556rem; }
+  padding-top: 1.3888888889rem; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/container-logo.scss */
+    .container-logo {
+      padding-top: 0;
+      margin-bottom: 0; } }
 
-/* line 9, components/container-logo.scss */
+/* line 13, components/container-logo.scss */
 .header-logo {
   display: flex;
   align-items: center;
   width: 74%; }
 
-/* line 15, components/container-logo.scss */
+/* line 19, components/container-logo.scss */
 .logo {
   display: flex;
-  margin-left: 4.4444444444rem;
   margin-right: 2.5555555556rem;
   width: 2.9055555556rem;
   height: 2.1111111111rem;
   content: url("../img/CHOCCO/container-logo/logo.svg");
   align-items: center; }
   @media screen and (max-width: 768px) {
-    /* line 15, components/container-logo.scss */
+    /* line 19, components/container-logo.scss */
     .logo {
       margin-left: 0; } }
 
-/* line 31, components/container-logo.scss */
+/* line 32, components/container-logo.scss */
 .menu-header {
   display: flex;
   width: 96%; }
   @media screen and (max-width: 768px) {
-    /* line 31, components/container-logo.scss */
+    /* line 32, components/container-logo.scss */
     .menu-header {
       display: none; } }
 
-/* line 40, components/container-logo.scss */
+/* line 41, components/container-logo.scss */
 .menu-list {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between; }
 
-/* line 47, components/container-logo.scss */
+/* line 48, components/container-logo.scss */
 .menu-link {
   text-decoration: none;
   font-size: 1rem; }
 
-/* line 52, components/container-logo.scss */
+/* line 53, components/container-logo.scss */
 .contacts-header {
   display: flex;
   width: 20%;
-  margin-right: 7%;
   justify-content: flex-end; }
 
 /* line 59, components/container-logo.scss */
@@ -244,9 +229,7 @@ footer {
   align-items: flex-start;
   width: 32%;
   min-height: 16.6666666667rem;
-  flex-direction: column;
-  margin-left: 4.2777777778rem;
-  margin-bottom: 3.6666666667rem; }
+  flex-direction: column; }
   @media screen and (max-width: 768px) {
     /* line 1, components/title.scss */
     .title {
@@ -257,23 +240,16 @@ footer {
       justify-content: center;
       align-items: center;
       text-align: center;
-      margin-left: 0; }
-      /* line 20, components/title.scss */
-      .title::before {
-        content: url("../img/CHOCCO/title/comp_1.png"); } }
+      margin-left: 0;
+      justify-content: flex-end;
+      background: url("../img/CHOCCO/title/comp_1.png") top 2% center/61% auto no-repeat; } }
   @media screen and (max-width: 768px) and (max-width: 480px) {
     /* line 1, components/title.scss */
     .title {
-      width: 100%;
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin-left: 0; } }
+      justify-content: flex-end;
+      background: url("../img/CHOCCO/title/comp_1.png") top 2% center/61% auto no-repeat; } }
 
-/* line 36, components/title.scss */
+/* line 27, components/title.scss */
 .title-text {
   font-size: 2.6666666667rem;
   font-weight: bold;
@@ -282,25 +258,25 @@ footer {
   text-transform: uppercase;
   margin-bottom: 0.2222222222rem; }
   @media screen and (max-width: 480px) {
-    /* line 36, components/title.scss */
+    /* line 27, components/title.scss */
     .title-text {
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 0 1.1111111111rem; } }
 
-/* line 52, components/title.scss */
+/* line 43, components/title.scss */
 .subtitle {
   font-size: 1.1666666667rem;
   font-style: normal;
   line-height: 1.2;
   margin-bottom: 1.6666666667rem; }
   @media screen and (max-width: 768px) {
-    /* line 52, components/title.scss */
+    /* line 43, components/title.scss */
     .subtitle {
       padding: 0 25%; } }
   @media screen and (max-width: 480px) {
-    /* line 52, components/title.scss */
+    /* line 43, components/title.scss */
     .subtitle {
       padding: 0 16%; } }
 
@@ -408,38 +384,50 @@ footer {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1.3888888889rem; }
+  @media screen and (max-width: 480px) {
+    /* line 9, components/section.scss */
+    .section-title {
+      margin-top: 6%; } }
 
-/* line 18, components/section.scss */
+/* line 24, components/section.scss */
 .title_green {
   color: #0b4d3c; }
 
 /* line 1, components/headline.scss */
 .headline {
   text-align: center; }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/headline.scss */
+    .headline {
+      margin-top: 0; } }
 
-/* line 5, components/headline.scss */
+/* line 9, components/headline.scss */
 .headline-title {
   color: #292929;
   font-size: 2.6666666667rem;
   font-weight: bold;
-  margin-bottom: 3.3333333333rem;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1.3888888889rem; }
+  @media screen and (max-width: 480px) {
+    /* line 9, components/headline.scss */
+    .headline-title {
+      margin-top: 10%;
+      margin-bottom: 0; } }
 
-/* line 15, components/headline.scss */
+/* line 24, components/headline.scss */
 .headline-subtitle {
   color: #666666;
   padding: 0 30%;
   margin-bottom: 2.3333333333rem; }
   @media screen and (max-width: 768px) {
-    /* line 15, components/headline.scss */
+    /* line 24, components/headline.scss */
     .headline-subtitle {
       padding: 0 23%; } }
   @media screen and (max-width: 480px) {
-    /* line 15, components/headline.scss */
+    /* line 24, components/headline.scss */
     .headline-subtitle {
-      padding: 0 11%; } }
+      padding: 0 5%; } }
 
 /* line 1, components/benefits.scss */
 .benefits-list {
@@ -454,32 +442,36 @@ footer {
       flex-direction: column;
       justify-content: space-between;
       height: 100%; } }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/benefits.scss */
+    .benefits-list {
+      height: 78%; } }
 
-/* line 15, components/benefits.scss */
+/* line 19, components/benefits.scss */
 .benefits-item {
   flex: 1;
   padding: 0 3%;
   position: relative; }
   @media screen and (max-width: 480px) {
-    /* line 15, components/benefits.scss */
+    /* line 19, components/benefits.scss */
     .benefits-item {
       display: flex;
       justify-content: space-between;
       padding: 0; } }
-  /* line 26, components/benefits.scss */
+  /* line 30, components/benefits.scss */
   .benefits-item::before {
     content: url("/public_html/img/CHOCCO/benefits/combined.png");
     position: absolute;
     top: 2.7777777778rem;
     right: 0;
     transform: translateX(50%); }
-  /* line 34, components/benefits.scss */
+  /* line 38, components/benefits.scss */
   .benefits-item:first-child {
     padding-left: 0; }
-  /* line 38, components/benefits.scss */
+  /* line 42, components/benefits.scss */
   .benefits-item:last-child {
     padding-right: 0; }
-    /* line 41, components/benefits.scss */
+    /* line 45, components/benefits.scss */
     .benefits-item:last-child::before {
       display: none; }
 
@@ -551,28 +543,36 @@ footer {
       .benefits-section::before {
         content: none; } }
 
-/* line 1, components/reviews.scss */
+@media screen and (max-width: 480px) {
+  /* line 1, components/reviews.scss */
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%; } }
+
+/* line 10, components/reviews.scss */
 .reviews-section {
   position: relative;
   background: url("../img/CHOCCO/reviews/ягода_3.png") right 5% top no-repeat; }
   @media screen and (max-width: 480px) {
-    /* line 1, components/reviews.scss */
+    /* line 10, components/reviews.scss */
     .reviews-section {
       background-position: right 1% top 1%; } }
-  /* line 9, components/reviews.scss */
+  /* line 18, components/reviews.scss */
   .reviews-section::before {
     content: url("../img/CHOCCO/reviews/узор_1.png");
     position: absolute;
     bottom: -8.5555555556rem;
     left: 0; }
-  /* line 16, components/reviews.scss */
+  /* line 25, components/reviews.scss */
   .reviews-section::after {
     content: url("../img/CHOCCO/reviews/ягоды_2.png");
     position: absolute;
     bottom: -4.4444444444rem;
     left: 0; }
 
-/* line 25, components/reviews.scss */
+/* line 34, components/reviews.scss */
 .reviews-display {
   background: #F8FAF9 url("../img/CHOCCO/reviews/слой_1.png") right top no-repeat;
   margin-left: 4.6666666667rem;
@@ -581,15 +581,21 @@ footer {
   overflow: hidden;
   position: relative; }
   @media screen and (max-width: 768px) {
-    /* line 25, components/reviews.scss */
+    /* line 34, components/reviews.scss */
     .reviews-display {
+      display: flex;
       margin: 0 0 2.2222222222rem;
       padding: 2.8333333333rem 1.2222222222rem 1.8888888889rem; } }
-  /* line 38, components/reviews.scss */
+  @media screen and (max-width: 480px) {
+    /* line 34, components/reviews.scss */
+    .reviews-display {
+      justify-content: flex-end;
+      margin: 0;
+      padding: 2.6666666667rem 1.2222222222rem 1.8888888889rem; } }
+  /* line 54, components/reviews.scss */
   .reviews-display::before {
     content: "";
     position: absolute;
-    display: block;
     width: 5rem;
     height: 5rem;
     background: #ffff;
@@ -598,70 +604,70 @@ footer {
     transform: translateX(-50%);
     top: -3.6111111111rem; }
     @media screen and (max-width: 480px) {
-      /* line 38, components/reviews.scss */
+      /* line 54, components/reviews.scss */
       .reviews-display::before {
         display: none; } }
 
-/* line 56, components/reviews.scss */
+/* line 71, components/reviews.scss */
 .reviews-display-inner {
   display: flex; }
   @media screen and (max-width: 768px) {
-    /* line 56, components/reviews.scss */
+    /* line 71, components/reviews.scss */
     .reviews-display-inner {
       flex-direction: column;
       text-align: center;
       align-items: center; } }
 
-/* line 66, components/reviews.scss */
+/* line 81, components/reviews.scss */
 .reviews-avatar {
   width: 14.1111111111rem;
   height: 14.4444444444rem; }
   @media screen and (max-width: 768px) {
-    /* line 66, components/reviews.scss */
+    /* line 81, components/reviews.scss */
     .reviews-avatar {
       width: 7.2222222222rem;
       height: 7.3333333333rem; } }
 
-/* line 76, components/reviews.scss */
+/* line 91, components/reviews.scss */
 .reviews-avatar-img1 {
   object-fit: cover;
   width: 100%;
   height: 100%; }
   @media screen and (max-width: 768px) {
-    /* line 76, components/reviews.scss */
+    /* line 91, components/reviews.scss */
     .reviews-avatar-img1 {
       display: none; } }
 
-/* line 86, components/reviews.scss */
+/* line 101, components/reviews.scss */
 .reviews-avatar-img2 {
   display: none; }
   @media screen and (max-width: 768px) {
-    /* line 86, components/reviews.scss */
+    /* line 101, components/reviews.scss */
     .reviews-avatar-img2 {
       display: flex;
       object-fit: cover;
       width: 100%;
       height: 100%; } }
 
-/* line 97, components/reviews.scss */
+/* line 112, components/reviews.scss */
 .reviews-content {
   flex: 1;
   margin-left: 1.1111111111rem; }
   @media screen and (max-width: 768px) {
-    /* line 101, components/reviews.scss */
+    /* line 116, components/reviews.scss */
     .reviews-content_block1 {
       display: none; } }
 
-/* line 110, components/reviews.scss */
+/* line 125, components/reviews.scss */
 .reviews-content_block2 {
   display: none; }
   @media screen and (max-width: 768px) {
-    /* line 110, components/reviews.scss */
+    /* line 125, components/reviews.scss */
     .reviews-content_block2 {
       display: block;
       flex: 1; } }
 
-/* line 119, components/reviews.scss */
+/* line 134, components/reviews.scss */
 .reviews-title {
   color: #292929;
   margin-top: 0.5rem;
@@ -669,24 +675,24 @@ footer {
   font-weight: bold;
   margin-bottom: 1rem; }
 
-/* line 127, components/reviews.scss */
+/* line 142, components/reviews.scss */
 .reviews-text {
   color: #666666;
   line-height: 1.2;
   margin-bottom: 1.4444444444rem;
   padding: 0 6rem 0 0; }
   @media screen and (max-width: 768px) {
-    /* line 127, components/reviews.scss */
+    /* line 142, components/reviews.scss */
     .reviews-text {
       padding: 0; } }
 
-/* line 138, components/reviews.scss */
+/* line 153, components/reviews.scss */
 .reviews-author {
   color: #292929;
   font-size: 1rem;
   font-weight: bold; }
 
-/* line 144, components/reviews.scss */
+/* line 159, components/reviews.scss */
 .reviews-list {
   display: flex;
   flex-wrap: wrap;
@@ -711,23 +717,21 @@ footer {
 
 /* line 1, components/border.scss */
 .border-section {
-  background: url("../img/CHOCCO/border/pattern.png") center center no-repeat;
-  height: 100vh;
-  min-width: 36.1111111111rem; }
-  /* line 9, components/border.scss */
+  background: url("../img/CHOCCO/border/pattern.png") center center no-repeat; }
+  /* line 6, components/border.scss */
   .border-section::before {
     content: url("../img/CHOCCO/border/лист_3.png");
     right: 3%;
     bottom: 5%;
     position: absolute; }
-  /* line 17, components/border.scss */
+  /* line 14, components/border.scss */
   .border-section::after {
     content: url("../img/CHOCCO/border/ягода_2.png");
     left: 3%;
     bottom: 5%;
     position: absolute; }
   @media screen and (max-width: 768px) {
-    /* line 25, components/border.scss */
+    /* line 22, components/border.scss */
     .border-section::before, .border-section::after {
       display: none; } }
 
@@ -742,54 +746,73 @@ footer {
     .form {
       flex-direction: column;
       padding: 0 4.1666666667rem; } }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/form.scss */
+    .form {
+      margin: 0;
+      padding: 0; } }
 
-/* line 13, components/form.scss */
+/* line 18, components/form.scss */
 .form-col {
   flex: 1;
   margin-right: 1.1111111111rem; }
-  /* line 17, components/form.scss */
+  /* line 22, components/form.scss */
   .form-col:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
-    /* line 13, components/form.scss */
+    /* line 18, components/form.scss */
     .form-col {
       margin-right: 0; } }
 
-/* line 26, components/form.scss */
+/* line 31, components/form.scss */
 .form-row {
   display: flex;
   margin-bottom: 1rem; }
 
-/* line 31, components/form.scss */
+/* line 36, components/form.scss */
 .form-block {
   flex: 1;
   margin-right: 1.1111111111rem; }
-  /* line 35, components/form.scss */
+  /* line 40, components/form.scss */
   .form-block:last-child {
     margin-right: 0; }
 
-/* line 40, components/form.scss */
+/* line 45, components/form.scss */
 .form-input {
   width: 100%;
   border: none;
   padding: 1rem 0.6111111111rem;
   border-radius: 0.2222222222rem;
   border: solid 0.1666666667rem transparent; }
-  /* line 47, components/form.scss */
+  @media screen and (max-width: 480px) {
+    /* line 45, components/form.scss */
+    .form-input {
+      padding: 0; } }
+  /* line 56, components/form.scss */
   .form-input_textarea {
     height: 9.8333333333rem;
     resize: none; }
-  /* line 52, components/form.scss */
+    @media screen and (max-width: 480px) {
+      /* line 56, components/form.scss */
+      .form-input_textarea {
+        height: 4.1666666667rem; } }
+  /* line 65, components/form.scss */
   .form-input:focus {
     border-color: #DEE2BD;
     border-radius: 0.2222222222rem;
     outline: none; }
 
-/* line 59, components/form.scss */
+/* line 72, components/form.scss */
 .form-controls {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 2.2222222222rem; }
+
+@media screen and (max-width: 768px) {
+  /* line 78, components/form.scss */
+  .form-btns {
+    display: flex;
+    justify-content: center; } }
 
 /* line 1, components/radio.scss */
 .radio {

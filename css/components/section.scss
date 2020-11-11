@@ -13,7 +13,13 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: rem(25px);
+
+  @include phones {
+    margin-top: 6%;
+  }
 }
+
+
 
 .title_green {
   color: $darkGreen;

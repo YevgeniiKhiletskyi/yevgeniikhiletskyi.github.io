@@ -1,15 +1,24 @@
 .headline {
   text-align: center;
+ 
+  @include phones {
+    margin-top: 0;
+  }
 }
 
 .headline-title {
   color: #292929;
   font-size: rem(48px);
   font-weight: bold;
-  margin-bottom: rem(60px);
   text-align: center;
   text-transform: uppercase;
   margin-bottom: rem(25px);
+
+  @include phones {
+    margin-top: 10%;
+    margin-bottom: 0;
+
+  }
 }
 
 .headline-subtitle {
@@ -22,7 +31,7 @@
   }
 
   @include phones {
-    padding: 0 11%;
+    padding: 0 5%;
   }
 }
 
