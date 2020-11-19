@@ -543,6 +543,122 @@ footer {
       .benefits-section::before {
         content: none; } }
 
+/* line 1, components/slider.scss */
+.slider-section {
+  background: #F8FAF9; }
+
+/* line 5, components/slider.scss */
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative; }
+
+/* line 14, components/slider.scss */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  width: 27px;
+  z-index: 20; }
+
+/* line 22, components/slider.scss */
+.slider-btn_next {
+  left: -20px; }
+
+/* line 26, components/slider.scss */
+.slider-btn_prev {
+  right: -20px; }
+
+/* line 30, components/slider.scss */
+.slider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; }
+
+/* line 39, components/slider.scss */
+.slider-list {
+  display: flex;
+  align-items: center;
+  transform: translateX(0px); }
+
+/* line 45, components/slider.scss */
+.slider-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; }
+
+/* line 53, components/slider.scss */
+.slider-left {
+  width: 120%;
+  display: flex;
+  flex-wrap: wrap; }
+
+/* line 59, components/slider.scss */
+.slider-img {
+  display: flex;
+  max-width: 100%;
+  object-fit: cover; }
+
+/* line 65, components/slider.scss */
+.slider-svg {
+  display: flex; }
+
+/* line 70, components/slider.scss */
+.ingredients {
+  margin-left: 30px; }
+
+/* line 74, components/slider.scss */
+.slider-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #292929;
+  text-transform: uppercase; }
+
+/* line 81, components/slider.scss */
+.slider_title {
+  padding: 0;
+  line-height: 42px;
+  margin: 26px 40px 34px 36px; }
+
+/* line 87, components/slider.scss */
+.slider-desc {
+  font-size: 18px;
+  color: #666666;
+  margin: 0 40px 34px 36px; }
+
+/* line 93, components/slider.scss */
+.slider-tag {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 33px;
+  margin-bottom: 20px; }
+
+/* line 101, components/slider.scss */
+.tag-text {
+  color: #666666; }
+
+/* line 105, components/slider.scss */
+.tag-value {
+  color: #000000; }
+
+/* line 110, components/slider.scss */
+.slider-row {
+  display: flex;
+  align-items: flex-end; }
+
+/* line 115, components/slider.scss */
+.slider-price {
+  margin-left: 44px;
+  margin-right: 30px; }
+
 @media screen and (max-width: 480px) {
   /* line 1, components/reviews.scss */
   .reviews {
