@@ -9,14 +9,14 @@
 
 .reviews-section {
   position: relative;
-  background: url("../img/CHOCCO/reviews/ягода_3.png") right 5% top no-repeat;
+  background: url("../img/CHOCCO/reviews/berry_3.png") right 5% top 1% no-repeat;
 
   @include phones {
     background-position: right 1% top 1%;
   }
 
   &::before {
-    content: url("../img/CHOCCO/reviews/узор_1.png");
+    content: url("../img/CHOCCO/reviews/pattern_1.png");
     position: absolute;
     bottom: rem(-154px);
     left: 0;
@@ -24,7 +24,7 @@
 
   &::after {
     content:  
-    url("../img/CHOCCO/reviews/ягоды_2.png");
+    url("../img/CHOCCO/reviews/berry_2.png");
     position: absolute;
     bottom: rem(-80px);
     left: 0;
@@ -32,7 +32,7 @@
 }
 
 .reviews-display {
-  background: #F8FAF9 url("../img/CHOCCO/reviews/слой_1.png") right top no-repeat;
+  background: #F8FAF9 url("../img/CHOCCO/reviews/layer_1.png") right top no-repeat;
   margin-left: rem(84px);
   margin-right: rem(78px);
   padding: rem(51px) rem(78px) rem(34px) rem(44px);

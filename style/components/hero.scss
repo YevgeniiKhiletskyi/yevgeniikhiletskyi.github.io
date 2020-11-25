@@ -1,6 +1,6 @@
 .hero {
   background:
-  url("../img/CHOCCO/hero/узор.png") right bottom no-repeat;
+  url("../img/CHOCCO/hero/pattern.png") right bottom no-repeat;
   background-color: $blue; 
   height: 100vh;
   min-width: rem(650px);
@@ -31,7 +31,7 @@
   }
 
   &::after {
-    content: url("../img/CHOCCO/hero/лист_3.png");
+    content: url("../img/CHOCCO/hero/sheet_3.png");
     position: absolute;
     bottom: -6%;
     left: 7%;
@@ -44,7 +44,7 @@
   justify-content: space-between;
   height: 100%;
   padding: rem(24px) 0 rem(45px);
-  background: url("../img/CHOCCO/hero/батончики.png") right center / 50% auto no-repeat;
+  background: url("../img/CHOCCO/hero/bars.png") right center / 50% auto no-repeat;
 
   @include tablets {
     background: none;

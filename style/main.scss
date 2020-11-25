@@ -15,14 +15,14 @@ $green: #497870;
 $z-fixed-menu: 100;
 
 //function
-@import "media.scss";
+@import "media/media.scss";
 
 //normalize
-@import url("../css/normalize.css");
+@import url("normalize/normalize.css");
 
 //setups
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap");
-@import "components/layout.scss";
+@import "layout/layout.scss";
 
 //components
 @import "components/header.scss";
