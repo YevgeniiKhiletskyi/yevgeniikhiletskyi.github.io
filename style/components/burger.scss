@@ -20,8 +20,8 @@
 
 #burger input { 
   display: flex;
-  width: 60px;
-  height: 60px;
+  width: 43px;
+  height: 43px;
   position: absolute;
   cursor: pointer;
   opacity: 0;
@@ -29,11 +29,11 @@
 }
 
 #burger span {
-  width: 45px;
-  height: 8px;
+  width: 40px;
+  height: 6px;
   margin-bottom: 10px;
   background: #ffffff;
-  border-radius: 4px;
+  border-radius: 2px;
   -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71);
   -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71);
   -ms-transition: all .5s cubic-bezier(.08,.81,.87,.71);
