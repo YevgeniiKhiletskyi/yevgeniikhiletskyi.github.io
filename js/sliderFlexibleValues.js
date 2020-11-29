@@ -5,37 +5,39 @@ const computedStyles = window.getComputedStyle(itemsList);
 const slideWidth = document.querySelector(".slider-item").clientWidth;
 const slidesCount = document.querySelectorAll(".slider-item").length;
 
-const minRight = 0;
+const position = 0;
 const sliderWidth = slideWidth * slidesCount;
-let currentRight = "";
+let currentSlider = "";
 
 
-itemsList.style.right = currentRight;
+itemsList.style.right = currentSlider;
 
 
 right.addEventListener("click", e => {
   e.preventDefault();
 
-  currentRight += slideWidth;
-  if (currentRight < sliderWidth) {
-    itemsList.style.right = `${currentRight}px`;
+  currentSlider += slideWidth;
+  if (currentSlider < sliderWidth) {
+    itemsList.style.right = `${currentSlider}px`;
   }else {
-    currentRight = "";
-    itemsList.style.right = minRight;
+    currentSlider = "";
+    itemsList.style.right = position;
   }
 })
+
 
 left.addEventListener("click", e => {
   e.preventDefault();
 
-  currentRight -= slideWidth;
-  if (currentRight > sliderWidth) {
-    //currentRight = 0;
-    itemsList.style.right = `${currentRight}px`;
-    
+  currentSlider -= slideWidth;
+  if (currentSlider > sliderWidth) {
+    currentRight = 0;
+    //itemsList.style.left = `${currentSlider}px`;
+    itemsList.style.left = position;
   }else {
-    
-    itemsList.style.right = minRight;
+    //currentSlider = "";
+    itemsList.style.left = `${currentSlider}px`;
+    //itemsList.style.left = minRight;
   }
   
 })

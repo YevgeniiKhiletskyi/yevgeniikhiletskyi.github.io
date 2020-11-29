@@ -20,7 +20,7 @@
     .burger-span_top {
       -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
       -ms-transform: translateY(11px) translateX(0) rotate(45deg);
-      transform: translateY(11px) translateX(0) rotate(410deg);
+      transform: translateY(11px) translateX(0) rotate(405deg);
       border-radius: 5px; 
     }
 
@@ -31,7 +31,7 @@
     .burger-span_bottom {
       -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
       -ms-transform: translateY(-11px) translateX(0) rotate(-45deg);
-      transform: translateY(-11px) translateX(0) rotate(-410deg);
+      transform: translateY(-11px) translateX(0) rotate(-405deg);
       border-radius: 5px;
     } 
   }

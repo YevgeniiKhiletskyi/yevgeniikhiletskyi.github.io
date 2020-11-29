@@ -21,7 +21,7 @@ $z-fixed-menu: 100;
 @import url("normalize/normalize.css");
 
 //setups
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap");
 @import "layout/layout.scss";
 
 //components
@@ -39,6 +39,7 @@ $z-fixed-menu: 100;
 @import "components/benefit.scss";
 @import "components/benefits-section.scss";
 @import "components/slider.scss";
+@import "components/composition.scss";
 @import "components/reviews.scss";
 @import "components/interactive-avatar.scss";
 @import "components/border.scss";
