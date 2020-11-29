@@ -29,15 +29,12 @@ right.addEventListener("click", e => {
 left.addEventListener("click", e => {
   e.preventDefault();
 
-  currentSlider -= slideWidth;
-  if (currentSlider > sliderWidth) {
-    currentRight = 0;
-    //itemsList.style.left = `${currentSlider}px`;
-    itemsList.style.left = position;
+  currentSlider += slideWidth;
+  if (currentSlider < sliderWidth) {
+    itemsList.style.right = `${currentSlider}px`;
   }else {
-    //currentSlider = "";
-    itemsList.style.left = `${currentSlider}px`;
-    //itemsList.style.left = minRight;
+    currentSlider = "";
+    itemsList.style.right = position;
   }
   
 })
