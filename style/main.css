@@ -222,6 +222,158 @@ footer {
   content: url("../img/CHOCCO/container-logo/phone.png");
   margin-right: 0.2777777778rem; }
 
+/* line 1, components/burger.scss */
+.burger-span {
+  position: absolute;
+  display: none;
+  right: 2%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  -webkit-transition: opacity .25s ease;
+  -o-transition: opacity .25s ease;
+  transition: opacity .25s ease; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/burger.scss */
+    .burger-span {
+      display: flex; } }
+  /* line 17, components/burger.scss */
+  .burger-span.burger-span--active {
+    opacity: 0.7; }
+    /* line 20, components/burger.scss */
+    .burger-span.burger-span--active .burger-span_top {
+      -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+      -ms-transform: translateY(11px) translateX(0) rotate(45deg);
+      transform: translateY(11px) translateX(0) rotate(410deg);
+      border-radius: 5px; }
+    /* line 27, components/burger.scss */
+    .burger-span.burger-span--active .burger-span_middle {
+      opacity: 0; }
+    /* line 31, components/burger.scss */
+    .burger-span.burger-span--active .burger-span_bottom {
+      -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+      -ms-transform: translateY(-11px) translateX(0) rotate(-45deg);
+      transform: translateY(-11px) translateX(0) rotate(-410deg);
+      border-radius: 5px; }
+  /* line 39, components/burger.scss */
+  .burger-span_item {
+    background: #fff;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .65s ease;
+    -o-transition: all .65s ease;
+    transition: all .65s ease;
+    cursor: pointer; }
+    /* line 53, components/burger.scss */
+    .burger-span_item:nth-of-type(2) {
+      top: 11px; }
+    /* line 57, components/burger.scss */
+    .burger-span_item:nth-of-type(3) {
+      top: 22px; }
+
+/* line 1, components/overlay.scss */
+.overlay {
+  position: fixed;
+  background: #2e3133;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .35s, visibility .35s, height .35s;
+  -o-transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden; }
+  /* line 16, components/overlay.scss */
+  .overlay.overlay--open {
+    opacity: .99;
+    visibility: visible;
+    height: 100%; }
+    /* line 21, components/overlay.scss */
+    .overlay.overlay--open .overlay-menu__item {
+      -webkit-animation: fadeInRight .5s ease forwards;
+      animation: fadeInRight .5s ease forwards;
+      -webkit-animation-delay: .35s;
+      animation-delay: .35s; }
+
+/* line 30, components/overlay.scss */
+.overlay-menu {
+  position: absolute;
+  height: 70%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+  text-align: center; }
+
+/* line 44, components/overlay.scss */
+.overlay-menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block; }
+
+/* line 51, components/overlay.scss */
+.overlay-menu__item {
+  display: block;
+  position: relative;
+  line-height: 1;
+  opacity: 0; }
+  /* line 58, components/overlay.scss */
+  .overlay-menu__item:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: ' ';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff; }
+  /* line 68, components/overlay.scss */
+  .overlay-menu__item:last-child:after {
+    display: none; }
+
+/* line 73, components/overlay.scss */
+.overlay-menu__link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px; }
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+/* line 103, components/overlay.scss */
+.body-active-menu {
+  overflow: hidden; }
+
+/* line 107, components/overlay.scss */
+.btn-close {
+  color: #fff;
+  font-size: 24px;
+  font-family: Helvetica; }
+
 /* line 1, components/title.scss */
 .title {
   display: flex;
@@ -1054,72 +1206,5 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-
-/* line 1, components/burger.scss */
-#burger {
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  display: none; }
-  @media screen and (max-width: 768px) {
-    /* line 1, components/burger.scss */
-    #burger {
-      display: flex; } }
-  @media screen and (max-width: 480px) {
-    /* line 1, components/burger.scss */
-    #burger {
-      display: flex; } }
-
-/* line 21, components/burger.scss */
-#burger input {
-  display: flex;
-  width: 43px;
-  height: 43px;
-  position: absolute;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 1; }
-
-/* line 31, components/burger.scss */
-#burger span {
-  width: 40px;
-  height: 6px;
-  margin-bottom: 10px;
-  background: #ffffff;
-  border-radius: 2px;
-  -webkit-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  -moz-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  -ms-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  -o-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71); }
-
-/* line 44, components/burger.scss */
-.burger-span1 {
-  transform-origin: 4px 0px; }
-
-/* line 48, components/burger.scss */
-.burger-span3 {
-  transform-origin: bottom right; }
-
-/* line 52, components/burger.scss */
-#burger input:checked ~ .burger-span1 {
-  background-color: #ffffff;
-  transform: rotate(45deg) translate(8px); }
-
-/* line 57, components/burger.scss */
-#burger input:checked ~ .burger-span2 {
-  background-color: #ffffff;
-  transform: rotate(495deg) translate(4px); }
-
-/* line 62, components/burger.scss */
-#burger input:checked ~ .burger-span3 {
-  background-color: #ffffff;
-  transform: rotate(45deg);
-  opacity: 0; }
 
 /*# sourceMappingURL=main.css.map */

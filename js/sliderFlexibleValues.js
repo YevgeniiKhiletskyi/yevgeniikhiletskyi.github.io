@@ -2,31 +2,40 @@ const left = document.querySelector("#left");
 const right = document.querySelector("#right");
 const itemsList = document.querySelector(".slider-list");
 const computedStyles = window.getComputedStyle(itemsList);
-const items = document.querySelectorAll(".slider-item");
+const slideWidth = document.querySelector(".slider-item").clientWidth;
+const slidesCount = document.querySelectorAll(".slider-item").length;
 
 const minRight = 0;
-const itemWidth = getComputedStyle(items[0]).width;
-const step = parseInt(itemWidth);
-const preShownItems = 300 / step;
-const maxRight = (items.length - preShownItems) ;
-let currentRight = 0;
+const sliderWidth = slideWidth * slidesCount;
+let currentRight = "";
+
 
 itemsList.style.right = currentRight;
+
 
 right.addEventListener("click", e => {
   e.preventDefault();
 
-  if (currentRight < maxRight) {
-    currentRight += step;
+  currentRight += slideWidth;
+  if (currentRight < sliderWidth) {
     itemsList.style.right = `${currentRight}px`;
+  }else {
+    currentRight = "";
+    itemsList.style.right = minRight;
   }
 })
 
 left.addEventListener("click", e => {
   e.preventDefault();
 
-  if (currentRight > minRight) {
-    currentRight -= step;
+  currentRight -= slideWidth;
+  if (currentRight > sliderWidth) {
+    //currentRight = 0;
     itemsList.style.right = `${currentRight}px`;
+    
+  }else {
+    
+    itemsList.style.right = minRight;
   }
+  
 })
