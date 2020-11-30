@@ -296,7 +296,7 @@ footer {
     visibility: visible;
     height: 100%; }
     /* line 21, components/overlay.scss */
-    .overlay.overlay--open .overlay-menu__item {
+    .overlay.overlay--open .overlay-menu_item {
       -webkit-animation: fadeInRight .5s ease forwards;
       animation: fadeInRight .5s ease forwards;
       -webkit-animation-delay: .35s;
@@ -317,20 +317,20 @@ footer {
   text-align: center; }
 
 /* line 44, components/overlay.scss */
-.overlay-menu__list {
+.overlay-menu_list {
   list-style: none;
   padding: 0;
   margin: 0 auto;
   display: inline-block; }
 
 /* line 51, components/overlay.scss */
-.overlay-menu__item {
+.overlay-menu_item {
   display: block;
   position: relative;
   line-height: 1;
   opacity: 0; }
   /* line 58, components/overlay.scss */
-  .overlay-menu__item:after {
+  .overlay-menu_item:after {
     display: inline-block;
     vertical-align: middle;
     content: ' ';
@@ -339,11 +339,11 @@ footer {
     border-radius: 50%;
     background-color: #fff; }
   /* line 68, components/overlay.scss */
-  .overlay-menu__item:last-child:after {
+  .overlay-menu_item:last-child:after {
     display: none; }
 
 /* line 73, components/overlay.scss */
-.overlay-menu__link {
+.overlay-menu_link {
   display: block;
   color: #fff;
   text-decoration: none;
@@ -788,40 +788,40 @@ footer {
     .slider-ingredients {
       display: none; } }
 
-/* line 101, components/slider.scss */
+/* line 103, components/slider.scss */
 .slider-title {
   font-size: 36px;
   font-weight: bold;
   color: #292929;
   text-transform: uppercase; }
   @media screen and (max-width: 768px) {
-    /* line 101, components/slider.scss */
+    /* line 103, components/slider.scss */
     .slider-title {
       font-size: 30px;
       text-align: center; } }
 
-/* line 113, components/slider.scss */
+/* line 115, components/slider.scss */
 .slider_title {
   padding: 0;
   line-height: 42px;
   margin: 26px 40px 34px 36px; }
   @media screen and (max-width: 768px) {
-    /* line 113, components/slider.scss */
+    /* line 115, components/slider.scss */
     .slider_title {
       margin: 0; } }
 
-/* line 123, components/slider.scss */
+/* line 125, components/slider.scss */
 .slider-desc {
   font-size: 18px;
   color: #666666;
   margin: 0 40px 34px 36px; }
   @media screen and (max-width: 768px) {
-    /* line 123, components/slider.scss */
+    /* line 125, components/slider.scss */
     .slider-desc {
       text-align: center;
       margin: 0 90px 34px; } }
 
-/* line 134, components/slider.scss */
+/* line 136, components/slider.scss */
 .slider-tag {
   width: 50%;
   display: flex;
@@ -829,39 +829,35 @@ footer {
   margin-left: 33px;
   margin-bottom: 20px; }
   @media screen and (max-width: 768px) {
-    /* line 134, components/slider.scss */
+    /* line 136, components/slider.scss */
     .slider-tag {
       width: initial;
       justify-content: space-evenly; } }
 
-/* line 147, components/slider.scss */
+/* line 149, components/slider.scss */
 .tag-text {
   color: #666666; }
 
-/* line 151, components/slider.scss */
+/* line 153, components/slider.scss */
 .tag-value {
   color: #000000; }
 
-/* line 155, components/slider.scss */
+/* line 157, components/slider.scss */
 .slider-row {
   display: flex;
   align-items: flex-end; }
   @media screen and (max-width: 768px) {
-    /* line 155, components/slider.scss */
+    /* line 157, components/slider.scss */
     .slider-row {
       justify-content: space-evenly; } }
 
-/* line 164, components/slider.scss */
+/* line 166, components/slider.scss */
 .slider-price {
   margin-left: 44px;
   margin-right: 30px; }
 
 /* line 1, components/composition.scss */
 .composition {
-  display: none; }
-
-/* line 5, components/composition.scss */
-.composition-list {
   width: 270px;
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
@@ -870,9 +866,16 @@ footer {
   border-radius: 6px;
   position: absolute;
   top: 0;
+  left: -2100px;
+  opacity: 0;
+  transition: opacity 0.3s; }
+
+/* line 15, components/composition.scss */
+.slider-ingredients:hover .composition {
+  opacity: 1;
   left: 100%; }
 
-/* line 17, components/composition.scss */
+/* line 20, components/composition.scss */
 .composition-item {
   display: flex;
   align-items: center;
@@ -881,16 +884,16 @@ footer {
   font-weight: 500;
   margin: 16px 10px 16px 10px; }
 
-/* line 26, components/composition.scss */
+/* line 29, components/composition.scss */
 .composition-icon {
   width: 50px;
   height: 50px; }
 
-/* line 31, components/composition.scss */
+/* line 34, components/composition.scss */
 .composition-name {
   width: 50%; }
 
-/* line 35, components/composition.scss */
+/* line 38, components/composition.scss */
 .composition-amount {
   padding-right: 20px; }
 

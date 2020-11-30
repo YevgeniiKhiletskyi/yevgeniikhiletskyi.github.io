@@ -18,7 +18,7 @@
     visibility: visible;
     height: 100%; 
   
-    .overlay-menu__item {
+    .overlay-menu_item {
       -webkit-animation: fadeInRight .5s ease forwards;
       animation: fadeInRight .5s ease forwards;
       -webkit-animation-delay: .35s;
@@ -41,14 +41,14 @@
   text-align: center; 
 }
       
-.overlay-menu__list {
+.overlay-menu_list {
   list-style: none;
   padding: 0;
   margin: 0 auto;
   display: inline-block; 
 }
       
-.overlay-menu__item {
+.overlay-menu_item {
   display: block;
   position: relative;
   line-height: 1;
@@ -70,7 +70,7 @@
   }
 }
       
-.overlay-menu__link {
+.overlay-menu_link {
   display: block;
   color: #fff;
   text-decoration: none;

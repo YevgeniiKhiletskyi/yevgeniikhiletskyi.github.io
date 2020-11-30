@@ -1,8 +1,4 @@
 .composition {
-  display: none;
-}
-
-.composition-list {
   width: 270px;
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
@@ -11,6 +7,13 @@
   border-radius: 6px;
   position: absolute;
   top: 0;
+  left: -2100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.slider-ingredients:hover .composition {
+  opacity: 1;
   left: 100%;
 }
 
