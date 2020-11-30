@@ -25,19 +25,21 @@ $z-fixed-menu: 100;
 @import "layout/layout.scss";
 
 //components
-@import "components/header.scss";
 @import "components/hero.scss";
-@import "components/container-logo.scss";
+@import "components/header.scss";
+@import "components/logo.scss";
+@import "components/menu.scss";
+@import "components/contacts.scss";
 @import "components/burger.scss";
 @import "components/overlay.scss";
 @import "components/title.scss";
 @import "components/btn.scss";
 @import "components/bullet-text.scss";
 @import "components/section.scss";
+@import "components/benefits-section.scss";
 @import "components/headline.scss";
 @import "components/benefits.scss";
 @import "components/benefit.scss";
-@import "components/benefits-section.scss";
 @import "components/slider.scss";
 @import "components/composition.scss";
 @import "components/reviews.scss";

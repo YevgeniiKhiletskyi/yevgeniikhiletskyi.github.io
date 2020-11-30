@@ -89,18 +89,6 @@ footer {
     .container {
       height: 100%; } }
 
-/* line 1, components/header.scss */
-.header-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  min-height: 36.1111111111rem; }
-  @media screen and (max-width: 480px) {
-    /* line 1, components/header.scss */
-    .header-content {
-      align-items: center; } }
-
 /* line 1, components/hero.scss */
 .hero {
   background: url("../img/CHOCCO/hero/pattern.png") right bottom no-repeat;
@@ -147,25 +135,37 @@ footer {
     .hero-container {
       background: none; } }
 
-/* line 1, components/container-logo.scss */
-.container-logo {
+/* line 1, components/header.scss */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  min-height: 36.1111111111rem; }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/header.scss */
+    .header-content {
+      align-items: center; } }
+
+/* line 13, components/header.scss */
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 1.3888888889rem; }
   @media screen and (max-width: 768px) {
-    /* line 1, components/container-logo.scss */
-    .container-logo {
+    /* line 13, components/header.scss */
+    .header {
       padding-top: 0;
       margin-bottom: 0; } }
 
-/* line 13, components/container-logo.scss */
+/* line 25, components/header.scss */
 .header-logo {
   display: flex;
   align-items: center;
   width: 74%; }
 
-/* line 19, components/container-logo.scss */
+/* line 1, components/logo.scss */
 .logo {
   display: flex;
   margin-right: 2.5555555556rem;
@@ -174,38 +174,38 @@ footer {
   content: url("../img/CHOCCO/container-logo/logo.svg");
   align-items: center; }
   @media screen and (max-width: 768px) {
-    /* line 19, components/container-logo.scss */
+    /* line 1, components/logo.scss */
     .logo {
       margin-left: 0; } }
 
-/* line 32, components/container-logo.scss */
+/* line 1, components/menu.scss */
 .menu-header {
   display: flex;
   width: 96%; }
   @media screen and (max-width: 768px) {
-    /* line 32, components/container-logo.scss */
+    /* line 1, components/menu.scss */
     .menu-header {
       display: none; } }
 
-/* line 41, components/container-logo.scss */
+/* line 10, components/menu.scss */
 .menu-list {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between; }
 
-/* line 48, components/container-logo.scss */
+/* line 17, components/menu.scss */
 .menu-link {
   text-decoration: none;
   font-size: 1rem; }
 
-/* line 53, components/container-logo.scss */
+/* line 1, components/contacts.scss */
 .contacts-header {
   display: flex;
   width: 20%;
   justify-content: flex-end; }
 
-/* line 59, components/container-logo.scss */
+/* line 7, components/contacts.scss */
 .contacts-phone {
   display: flex;
   align-items: center;
@@ -213,11 +213,11 @@ footer {
   text-decoration: none; }
 
 @media screen and (max-width: 768px) {
-  /* line 66, components/container-logo.scss */
+  /* line 14, components/contacts.scss */
   .contacts-phone_header {
     display: none; } }
 
-/* line 72, components/container-logo.scss */
+/* line 20, components/contacts.scss */
 .contacts-phone::before {
   content: url("../img/CHOCCO/container-logo/phone.png");
   margin-right: 0.2777777778rem; }
@@ -543,6 +543,29 @@ footer {
 .title_green {
   color: #0b4d3c; }
 
+/* line 1, components/benefits-section.scss */
+.benefits-section {
+  position: relative;
+  background: url("../img/CHOCCO/benefits-section/pattern_sheet_1.png") left top 57% no-repeat; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/benefits-section.scss */
+    .benefits-section {
+      background-position: left top 17%; } }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/benefits-section.scss */
+    .benefits-section {
+      background: none; } }
+  /* line 13, components/benefits-section.scss */
+  .benefits-section::before {
+    content: url("../img/CHOCCO/benefits-section/raspberry_1.png");
+    position: absolute;
+    bottom: -4.4444444444rem;
+    left: 0; }
+    @media screen and (max-width: 480px) {
+      /* line 13, components/benefits-section.scss */
+      .benefits-section::before {
+        content: none; } }
+
 /* line 1, components/headline.scss */
 .headline {
   text-align: center; }
@@ -669,29 +692,6 @@ footer {
     /* line 37, components/benefit.scss */
     .benefit-title {
       padding: 0 1rem; } }
-
-/* line 1, components/benefits-section.scss */
-.benefits-section {
-  position: relative;
-  background: url("../img/CHOCCO/benefits-section/pattern_sheet_1.png") left top 57% no-repeat; }
-  @media screen and (max-width: 768px) {
-    /* line 1, components/benefits-section.scss */
-    .benefits-section {
-      background-position: left top 17%; } }
-  @media screen and (max-width: 480px) {
-    /* line 1, components/benefits-section.scss */
-    .benefits-section {
-      background: none; } }
-  /* line 13, components/benefits-section.scss */
-  .benefits-section::before {
-    content: url("../img/CHOCCO/benefits-section/raspberry_1.png");
-    position: absolute;
-    bottom: -4.4444444444rem;
-    left: 0; }
-    @media screen and (max-width: 480px) {
-      /* line 13, components/benefits-section.scss */
-      .benefits-section::before {
-        content: none; } }
 
 /* line 1, components/slider.scss */
 .slider-section {

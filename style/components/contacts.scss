@@ -1,0 +1,23 @@
+.contacts-header {
+  display: flex;
+  width: 20%;
+  justify-content: flex-end;
+}
+
+.contacts-phone {
+  display: flex;
+  align-items: center;
+  font-size: rem(24px);
+  text-decoration: none;
+}
+
+.contacts-phone_header{
+  @include tablets {
+    display: none;
+  }
+}
+
+.contacts-phone::before {
+content: url("../img/CHOCCO/container-logo/phone.png");
+margin-right: rem(5px);
+}

@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  margin-right: rem(46px);
+  width: rem(52.3px);
+  height: rem(38px);
+  content: url("../img/CHOCCO/container-logo/logo.svg");  
+  align-items: center;
+
+  @include tablets {
+    margin-left: 0;
+  }
+}
