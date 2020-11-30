@@ -18,15 +18,23 @@
   z-index: 20;
      
   &_next {
-    left: -20px;
+    left: 2%;
+
+    @include phones {
+      left: -5px;
+    }
   }
     
   &_prev {
-    right: -20px;
+    right: 2%;
+
+    @include phones {
+      right: -5px;
+    }
   } 
 
   @include tablets {
-    top: 25%;
+    top: 46%;
   }
 }
   
@@ -45,7 +53,7 @@
   right: 0;
   position: relative;
 }
-  
+
 .slider-item {
   width: 100%;
   display: flex;
@@ -58,12 +66,16 @@
     flex-direction: column;
   }  
 }
-  
+
 .slider-left {
   width: 100%;
 
   @include tablets {
     width: 50%;
+  }
+
+  @include phones {
+    width: 65%;
   }
 }
 
