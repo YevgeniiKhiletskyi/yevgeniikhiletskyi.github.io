@@ -987,65 +987,62 @@ footer {
         display: none; } }
 
 /* line 71, components/reviews.scss */
+.reviews-display_list {
+  position: relative;
+  min-height: 280px; }
+
+/* line 76, components/reviews.scss */
+.reviews-display_item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  opacity: 0; }
+  /* line 86, components/reviews.scss */
+  .reviews-display_item.active {
+    position: static;
+    opacity: 1;
+    pointer-events: unset; }
+
+/* line 93, components/reviews.scss */
 .reviews-display-inner {
   display: flex; }
   @media screen and (max-width: 768px) {
-    /* line 71, components/reviews.scss */
+    /* line 93, components/reviews.scss */
     .reviews-display-inner {
       flex-direction: column;
       text-align: center;
       align-items: center; } }
 
-/* line 81, components/reviews.scss */
+/* line 103, components/reviews.scss */
 .reviews-avatar {
   width: 14.1111111111rem;
   height: 14.4444444444rem; }
   @media screen and (max-width: 768px) {
-    /* line 81, components/reviews.scss */
+    /* line 103, components/reviews.scss */
     .reviews-avatar {
       width: 7.2222222222rem;
       height: 7.3333333333rem; } }
 
-/* line 91, components/reviews.scss */
-.reviews-avatar-img1 {
+/* line 113, components/reviews.scss */
+.reviews-avatar-img {
   object-fit: cover;
   width: 100%;
   height: 100%; }
-  @media screen and (max-width: 768px) {
-    /* line 91, components/reviews.scss */
-    .reviews-avatar-img1 {
-      display: none; } }
 
-/* line 101, components/reviews.scss */
-.reviews-avatar-img2 {
-  display: none; }
-  @media screen and (max-width: 768px) {
-    /* line 101, components/reviews.scss */
-    .reviews-avatar-img2 {
-      display: flex;
-      object-fit: cover;
-      width: 100%;
-      height: 100%; } }
-
-/* line 112, components/reviews.scss */
+/* line 119, components/reviews.scss */
 .reviews-content {
   flex: 1;
   margin-left: 1.1111111111rem; }
   @media screen and (max-width: 768px) {
-    /* line 116, components/reviews.scss */
+    /* line 123, components/reviews.scss */
     .reviews-content_block1 {
       display: none; } }
 
-/* line 125, components/reviews.scss */
-.reviews-content_block2 {
-  display: none; }
-  @media screen and (max-width: 768px) {
-    /* line 125, components/reviews.scss */
-    .reviews-content_block2 {
-      display: block;
-      flex: 1; } }
-
-/* line 134, components/reviews.scss */
+/* line 131, components/reviews.scss */
 .reviews-title {
   color: #292929;
   margin-top: 0.5rem;
@@ -1053,42 +1050,53 @@ footer {
   font-weight: bold;
   margin-bottom: 1rem; }
 
-/* line 142, components/reviews.scss */
+/* line 139, components/reviews.scss */
 .reviews-text {
   color: #666666;
   line-height: 1.2;
   margin-bottom: 1.4444444444rem;
-  padding: 0 6rem 0 0; }
+  padding-right: 20%; }
   @media screen and (max-width: 768px) {
-    /* line 142, components/reviews.scss */
+    /* line 139, components/reviews.scss */
     .reviews-text {
       padding: 0; } }
 
-/* line 153, components/reviews.scss */
+/* line 150, components/reviews.scss */
 .reviews-author {
   color: #292929;
   font-size: 1rem;
   font-weight: bold; }
 
-/* line 159, components/reviews.scss */
+/* line 156, components/reviews.scss */
 .reviews-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
 
-/* line 1, components/interactive-avatar.scss */
-.interactive-avatar {
+/* line 162, components/reviews.scss */
+.reviews-switcher_item {
+  position: relative;
   width: 4.5555555556rem;
   height: 4.5555555556rem;
   border: 0.2222222222rem solid transparent;
   border-radius: 50%;
-  overflow: hidden; }
-  /* line 8, components/interactive-avatar.scss */
-  .interactive-avatar_active {
-    border-color: #0f5a47; }
+  overflow: hidden;
+  cursor: pointer; }
+  /* line 171, components/reviews.scss */
+  .reviews-switcher_item.active {
+    border-color: #365A49; }
 
-/* line 13, components/interactive-avatar.scss */
-.interactive-avatar-img {
+/* line 1, components/interactive-avatar.scss */
+.interactive-avatar_link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 10, components/interactive-avatar.scss */
+.interactive-avatar_img {
   width: 100%;
   height: 100%;
   object-fit: cover; }

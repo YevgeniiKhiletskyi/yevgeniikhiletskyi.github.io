@@ -582,56 +582,87 @@
         <h2 class="section-title">Отзывы</h2>
         <div class="reviews">
           <div class="reviews-display">
-            <div class="reviews-display-inner">
-              <div class="reviews-avatar">
-                <img src="./img/CHOCCO/reviews/photo1.jpg" alt="black heir girl" class="reviews-avatar-img1">
-                <img src="./img/CHOCCO/reviews/photo3.jpg" alt="black heir girl" class="reviews-avatar-img2">
-              </div>
-              <article class="reviews-content reviews-content_block1">
-                <h3 class="reviews-title">Лучший перекус</h3>
-                <div class="reviews-text">
-                  <p>
-                    Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы.
-                    В течение дня сижу за компьютером и часто отходить в кафе или на кухню
-                    просто не могу себе позволить. А батончик – он всегда под рукой.
-                    Это приятно и удобно.
-                  </p>
+            <ul class="reviews-display_list">
+              <li class="reviews-display_item active" data-open_link="one">
+                <div class="reviews-display-inner">
+                  <div class="reviews-avatar">
+                    <img src="./img/CHOCCO/reviews/photo1.jpg" alt="black heir girl" class="reviews-avatar-img">
+                  </div>
+                  <article class="reviews-content">
+                    <h3 class="reviews-title">Лучший перекус</h3>
+                    <div class="reviews-text">
+                      <p>
+                        Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы.
+                        В течение дня сижу за компьютером и часто отходить в кафе или на кухню
+                        просто не могу себе позволить. А батончик – он всегда под рукой.
+                        Это приятно и удобно.
+                      </p>
+                    </div>
+                    <div class="reviews-author">
+                      Алёна Хмельницкая
+                    </div>
+                  </article>
                 </div>
-                <div class="reviews-author">
-                  Алёна Хмельницкая
+              </li>
+              <li class="reviews-display_item" data-open_link="two">
+                <div class="reviews-display-inner">
+                  <div class="reviews-avatar">
+                    <img src="./img/CHOCCO/reviews/photo2.jpg" alt="black heir girl" class="reviews-avatar-img">
+                  </div>
+                  <article class="reviews-content">
+                    <h3 class="reviews-title">Идеально подходят для спортсменов</h3>
+                    <div class="reviews-text">
+                      <p>
+                        После тренировок всегда хочется быстро закинуться чем-то белковым, потому 
+                        что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда
+                        выручают в этом плане. Спасибо производителю за этот качественный и экологичный
+                        продукт.
+                      </p>
+                    </div>
+                    <div class="reviews-author">
+                      Вадим Грачев
+                    </div>
+                  </article>
                 </div>
-              </article>
-              <article class="reviews-content reviews-content_block2">
-                <h3 class="reviews-title">Лучшие батончики премиум уровня</h3>
-                <div class="reviews-text">
-                  <p>
-                    Батончики понравились. На мой взгляд слегка завышена цена по сравнению с
-                    конкурентами, однако, как говорится – оно того стоит. Нравится носить с
-                    собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют
-                    голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс,
-                    чем минус.
-                  </p>
+              </li>
+              <li class="reviews-display_item" data-open_link="three">
+                <div class="reviews-display-inner">
+                  <div class="reviews-avatar">
+                    <img src="./img/CHOCCO/reviews/photo3.jpg" alt="black heir girl" class="reviews-avatar-img">
+                  </div>
+                  <article class="reviews-content">
+                    <h3 class="reviews-title">Лучшие батончики премиум уровня</h3>
+                    <div class="reviews-text">
+                      <p>
+                        Батончики понравились. На мой взгляд слегка завышена цена по сравнению с
+                        конкурентами, однако, как говорится – оно того стоит. Нравится носить с
+                        собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют
+                        голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс,
+                        чем минус.
+                      </p>
+                    </div>
+                    <div class="reviews-author">
+                      Мария Орлова
+                    </div>
+                  </article>
                 </div>
-                <div class="reviews-author">
-                  Мария Орлова
-                </div>
-              </article>
-            </div>
+              </li>
+            </ul>
           </div>
           <ul class="reviews-list">
-            <li class="reviews-item interactive-avatar interactive-avatar_active">
-              <a href="#" class="interactive-avatar-link">
-                <img src="./img/CHOCCO/reviews/photo1.jpg" alt="black hair girl" class="interactive-avatar-img">
+            <li class="reviews-switcher_item active">
+              <a class="interactive-avatar_link" data-open="one">
+                <img src="./img/CHOCCO/reviews/photo1.jpg" alt="black hair girl" class="interactive-avatar_img">
               </a>
             </li>
-            <li class="reviews-item interactive-avatar">
-              <a href="#" class="interactive-avatar-link">
-                <img src="./img/CHOCCO/reviews/photo2.jpg" alt="black hair girl" class="interactive-avatar-img">
+            <li class="reviews-switcher_item">
+              <a class="interactive-avatar_link"  data-open="two">
+                <img src="./img/CHOCCO/reviews/photo2.jpg" alt="black hair girl" class="interactive-avatar_img">
               </a>
             </li>
-            <li class="reviews-item interactive-avatar">
-              <a href="#" class="interactive-avatar-link">
-                <img src="./img/CHOCCO/reviews/photo3.jpg" alt="black hair girl" class="interactive-avatar-img">
+            <li class="reviews-switcher_item">
+              <a class="interactive-avatar_link"  data-open="three">
+                <img src="./img/CHOCCO/reviews/photo3.jpg" alt="black hair girl" class="interactive-avatar_img">
               </a>
             </li>
           </ul>
@@ -745,6 +776,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/tabs.js"></script>
 </body>
 
 </html>
