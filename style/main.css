@@ -568,13 +568,24 @@ footer {
 
 /* line 1, components/headline.scss */
 .headline {
-  text-align: center; }
+  display: flex;
+  flex-direction: column; }
   @media screen and (max-width: 480px) {
     /* line 1, components/headline.scss */
     .headline {
+      height: 97%; } }
+
+/* line 11, components/headline.scss */
+.headline-cap {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (max-width: 480px) {
+    /* line 11, components/headline.scss */
+    .headline-cap {
+      line-height: 1;
       margin-top: 0; } }
 
-/* line 9, components/headline.scss */
+/* line 21, components/headline.scss */
 .headline-title {
   color: #292929;
   font-size: 2.6666666667rem;
@@ -583,22 +594,22 @@ footer {
   text-transform: uppercase;
   margin-bottom: 1.3888888889rem; }
   @media screen and (max-width: 480px) {
-    /* line 9, components/headline.scss */
+    /* line 21, components/headline.scss */
     .headline-title {
-      margin-top: 10%;
+      margin-top: 2%;
       margin-bottom: 0; } }
 
-/* line 23, components/headline.scss */
+/* line 35, components/headline.scss */
 .headline-subtitle {
   color: #666666;
-  padding: 0 30%;
+  padding: 0 26%;
   margin-bottom: 2.3333333333rem; }
   @media screen and (max-width: 768px) {
-    /* line 23, components/headline.scss */
+    /* line 35, components/headline.scss */
     .headline-subtitle {
       padding: 0 23%; } }
   @media screen and (max-width: 480px) {
-    /* line 23, components/headline.scss */
+    /* line 35, components/headline.scss */
     .headline-subtitle {
       padding: 0 5%; } }
 
@@ -614,37 +625,38 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      line-height: 1;
       height: 100%; } }
-  @media screen and (max-width: 480px) {
-    /* line 1, components/benefits.scss */
-    .benefits-list {
-      height: 78%; } }
 
-/* line 19, components/benefits.scss */
+/* line 16, components/benefits.scss */
 .benefits-item {
   flex: 1;
   padding: 0 3%;
   position: relative; }
   @media screen and (max-width: 480px) {
-    /* line 19, components/benefits.scss */
+    /* line 16, components/benefits.scss */
     .benefits-item {
       display: flex;
       justify-content: space-between;
       padding: 0; } }
-  /* line 30, components/benefits.scss */
+  /* line 27, components/benefits.scss */
   .benefits-item::before {
     content: url("../img/CHOCCO/benefits/combined.png");
     position: absolute;
     top: 2.7777777778rem;
     right: 0;
     transform: translateX(50%); }
-  /* line 38, components/benefits.scss */
+    @media screen and (max-width: 768px) {
+      /* line 27, components/benefits.scss */
+      .benefits-item::before {
+        display: none; } }
+  /* line 39, components/benefits.scss */
   .benefits-item:first-child {
     padding-left: 0; }
-  /* line 42, components/benefits.scss */
+  /* line 43, components/benefits.scss */
   .benefits-item:last-child {
     padding-right: 0; }
-    /* line 45, components/benefits.scss */
+    /* line 46, components/benefits.scss */
     .benefits-item:last-child::before {
       display: none; }
 

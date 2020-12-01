@@ -1,7 +1,19 @@
 .headline {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+  @include phones {
+    height: 97%;
+    
+  }
+}
+
+.headline-cap {
+  display: flex;
+  flex-direction: column;
  
   @include phones {
+    line-height: 1;
     margin-top: 0;
   }
 }
@@ -15,14 +27,14 @@
   margin-bottom: rem(25px);
 
   @include phones {
-    margin-top: 10%;
+    margin-top: 2%;
     margin-bottom: 0;
   }
 }
 
 .headline-subtitle {
   color: #666666;
-  padding: 0 30%;
+  padding: 0 26%;
   margin-bottom: rem(42px);
 
   @include tablets {
