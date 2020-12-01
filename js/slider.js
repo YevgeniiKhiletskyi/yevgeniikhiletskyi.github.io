@@ -7,7 +7,7 @@ const slidesCount = document.querySelectorAll(".slider-item").length;
 
 const position = 0;
 const sliderWidth = slideWidth * slidesCount;
-let currentSlider = "";
+let currentSlider = 0;
 
 
 itemsList.style.right = currentSlider;
@@ -20,7 +20,7 @@ right.addEventListener("click", e => {
   if (currentSlider < sliderWidth) {
     itemsList.style.right = `${currentSlider}px`;
   }else {
-    currentSlider = "";
+    currentSlider = 0;
     itemsList.style.right = position;
   }
 })
@@ -33,8 +33,7 @@ left.addEventListener("click", e => {
   if (currentSlider < sliderWidth) {
     itemsList.style.right = `${currentSlider}px`;
   }else {
-    currentSlider = "";
+    currentSlider = 0;
     itemsList.style.right = position;
   }
-  
 })

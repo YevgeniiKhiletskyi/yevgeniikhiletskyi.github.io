@@ -12,7 +12,7 @@
 //slider-controls
 .slider-btn {
   position: absolute;
-  top: 50%;
+  top: 41%;
   transform: translateY(50%);
   width: 27px;
   z-index: 20;
@@ -34,7 +34,11 @@
   } 
 
   @include tablets {
-    top: 46%;
+    top: 38%;
+  }
+
+  @include phones {
+    top: 36%;
   }
 }
   
@@ -143,6 +147,10 @@
    text-align: center;
    margin: 0 90px 34px;
   }
+
+  @include phones {
+    margin: 0 52px 10px;
+  }
 }
   
 .slider-tag {
@@ -178,5 +186,9 @@
 .slider-price {
   margin-left: 44px;
   margin-right: 30px;
+
+  @include phones {
+    margin-right: 0;
+  }
 }
 
