@@ -84,10 +84,6 @@ footer {
   max-width: 940px;
   margin: 0 auto;
   position: relative; }
-  @media screen and (max-width: 480px) {
-    /* line 80, layout/layout.scss */
-    .container {
-      height: 100%; } }
 
 /* line 1, components/hero.scss */
 .hero {
@@ -934,6 +930,12 @@ footer {
   padding-right: 20px; }
 
 /* line 1, components/team.scss */
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/* line 7, components/team.scss */
 .team-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -942,7 +944,7 @@ footer {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   @media screen and (max-width: 768px) {
-    /* line 1, components/team.scss */
+    /* line 7, components/team.scss */
     .team-list {
       padding: 0 10%;
       flex-direction: column;
@@ -952,7 +954,7 @@ footer {
       -ms-flex-direction: column;
       -webkit-box-align: center; } }
 
-/* line 20, components/team.scss */
+/* line 26, components/team.scss */
 .team-item {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -962,7 +964,7 @@ footer {
   max-width: 231px;
   position: relative; }
   @media screen and (max-width: 768px) {
-    /* line 20, components/team.scss */
+    /* line 26, components/team.scss */
     .team-item {
       -webkit-box-flex: initial;
       -ms-flex: initial;
@@ -970,34 +972,32 @@ footer {
       margin-bottom: 35px;
       margin-right: 0; } }
 
-/* line 39, components/team.scss */
+/* line 46, components/team.scss */
 .team-member {
   height: 288px;
   margin-bottom: 20px; }
 
-/* line 45, components/team.scss */
+/* line 52, components/team.scss */
 .team-desktop .team-content {
   position: absolute;
   top: 100%; }
 @media screen and (max-width: 768px) {
-  /* line 44, components/team.scss */
+  /* line 51, components/team.scss */
   .team-desktop {
     display: none; } }
 
-/* line 55, components/team.scss */
+/* line 62, components/team.scss */
 .team-phone {
   display: none; }
-  /* line 58, components/team.scss */
+  /* line 65, components/team.scss */
   .team-phone .team-item {
-    margin-bottom: 10px; }
+    margin-bottom: 0; }
   @media screen and (max-width: 768px) {
-    /* line 55, components/team.scss */
+    /* line 62, components/team.scss */
     .team-phone {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex; } }
 
-/* line 69, components/team.scss */
+/* line 77, components/team.scss */
 .team-title {
   color: #000000;
   display: -webkit-inline-box;
@@ -1013,23 +1013,23 @@ footer {
   font-weight: bold;
   margin-bottom: 20px; }
 
-/* line 85, components/team.scss */
+/* line 93, components/team.scss */
 .team-content {
   overflow: hidden;
   -webkit-transition: height 0.3s;
   -o-transition: height 0.3s;
   transition: height 0.3s;
   height: 0; }
-  /* line 92, components/team.scss */
-  .team-content_block {
-    padding: 5px; }
-    /* line 95, components/team.scss */
-    .team-content_block .team-content_job {
-      color: #000000; }
-    /* line 99, components/team.scss */
-    .team-content_block .team-content_text {
-      color: #666666;
-      font-weight: 300; }
+  /* line 101, components/team.scss */
+  .team-content_block.team-content_bottom {
+    margin-bottom: 20px; }
+  /* line 105, components/team.scss */
+  .team-content_block .team-content_job {
+    color: #000000; }
+  /* line 109, components/team.scss */
+  .team-content_block .team-content_text {
+    color: #666666;
+    font-weight: 300; }
 
 /* line 1, components/button.scss */
 button {

@@ -82,8 +82,4 @@ footer {
   max-width: $containerWidth;
   margin: 0 auto;
   position: relative;
-
-  @include phones {
-    height: 100%;
-  }
 }
