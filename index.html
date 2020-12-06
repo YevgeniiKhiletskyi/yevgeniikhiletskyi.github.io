@@ -830,19 +830,20 @@
       <div class="container">
         <h2 class="section-title title_green">Закажите доставку</h2>
         <form class="form">
+          <input type="hidden" name="to" value="somewhere@mail.com">
           <div class="form-col">
             <div class="form-row">
               <lebel class="form-block">
                 <div class="form-title">
                   Имя
                 </div>
-                <input type="text" class="form-input">
+                <input type="text" name="name" class="form-input ">
               </lebel>
               <lebel class="form-block">
                 <div class="form-title">
                   Телефон
                 </div>
-                <input type="text" class="form-input">
+                <input type="text" name="phone" class="form-input">
               </lebel>
             </div>
             <div class="form-row">
@@ -850,7 +851,7 @@
                 <div class="form-title">
                   Улица
                 </div>
-                <input type="text" class="form-input">
+                <input type="text" name="street" class="form-input">
               </lebel>
             </div>
             <div class="form-row">
@@ -858,25 +859,25 @@
                 <div class="form-title">
                   Дом
                 </div>
-                <input type="text" class="form-input">
+                <input type="text" name="home" class="form-input">
               </lebel>
               <lebel class="form-block">
                 <div class="form-title">
                   Корпус
                 </div>
-                <input type="text" class="form-input">
+                <input type="text" name="part" class="form-input">
               </lebel>
               <lebel class="form-block">
                 <div class="form-title">
                   Квартира
                 </div>
-                <input type="text" class="form-input">
+                <input type="text" name="appartment" class="form-input">
               </lebel>
               <lebel class="form-block">
                 <div class="form-title">
                   Этаж
                 </div>
-                <input type="text" class="form-input">
+                <input type="text" name="floor" class="form-input">
               </lebel>
             </div>
           </div>
@@ -886,7 +887,7 @@
                 <div class="form-title">
                   Комментарий
                 </div>
-                <textarea class="form-input form-input_textarea"></textarea>
+                <textarea name="comment" class="form-input form-input_textarea"></textarea>
               </lebel>
             </div>
             <div class="form-controls">

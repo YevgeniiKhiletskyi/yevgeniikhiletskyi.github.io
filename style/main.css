@@ -1316,17 +1316,21 @@ button {
     outline: none; }
 
 /* line 72, components/form.scss */
+.input-error {
+  border-color: red; }
+
+/* line 76, components/form.scss */
 .form-controls {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 2.2222222222rem; }
   @media screen and (max-width: 480px) {
-    /* line 72, components/form.scss */
+    /* line 76, components/form.scss */
     .form-controls {
       padding-bottom: 0.8333333333rem; } }
 
 @media screen and (max-width: 768px) {
-  /* line 82, components/form.scss */
+  /* line 86, components/form.scss */
   .form-btns {
     display: flex;
     justify-content: center; } }
@@ -1392,6 +1396,10 @@ button {
     display: none; }
 
 /* line 20, components/modal.scss */
+.error-modal {
+  color: red; }
+
+/* line 24, components/modal.scss */
 .modal-container {
   background: #fff;
   padding: 35px 60px;
