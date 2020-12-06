@@ -198,10 +198,9 @@ footer {
 /* line 1, components/contacts.scss */
 .contacts-header {
   display: flex;
-  width: 20%;
   justify-content: flex-end; }
 
-/* line 7, components/contacts.scss */
+/* line 6, components/contacts.scss */
 .contacts-phone {
   display: flex;
   align-items: center;
@@ -209,11 +208,11 @@ footer {
   text-decoration: none; }
 
 @media screen and (max-width: 768px) {
-  /* line 14, components/contacts.scss */
+  /* line 13, components/contacts.scss */
   .contacts-phone_header {
     display: none; } }
 
-/* line 20, components/contacts.scss */
+/* line 19, components/contacts.scss */
 .contacts-phone::before {
   content: url("../img/CHOCCO/container-logo/phone.png");
   margin-right: 0.2777777778rem; }
@@ -448,18 +447,29 @@ footer {
   /* line 20, components/btn.scss */
   .btn-green {
     background: #0b4d3c;
+    border: 1px solid #0b4d3c;
     color: #fff; }
-    /* line 24, components/btn.scss */
+    /* line 25, components/btn.scss */
     .btn-green:hover {
       background: #fff;
       color: #0b4d3c;
       transition: 0.3s; }
-  /* line 31, components/btn.scss */
+  /* line 32, components/btn.scss */
+  .btn-close_app {
+    background: #0b4d3c;
+    border: 1px solid #0b4d3c;
+    color: #fff; }
+    /* line 37, components/btn.scss */
+    .btn-close_app:hover {
+      background: #fff;
+      color: #0b4d3c;
+      transition: 0.3s; }
+  /* line 45, components/btn.scss */
   .btn-transparent {
     background: transparent;
     color: #000;
     text-transform: none; }
-    /* line 36, components/btn.scss */
+    /* line 50, components/btn.scss */
     .btn-transparent:hover {
       background: transparent;
       color: #0b4d3c; }
@@ -1365,6 +1375,29 @@ button {
 .radio-title {
   padding-left: 0.5555555556rem;
   padding-right: 1.2777777778rem; }
+
+/* line 1, components/modal.scss */
+.modal {
+  display: none; }
+  /* line 4, components/modal.scss */
+  .modal.error-modal .modal-content {
+    color: red; }
+  /* line 9, components/modal.scss */
+  .modal.fancybox-content {
+    color: #000000;
+    font-weight: 500;
+    padding: 0 !important; }
+  /* line 15, components/modal.scss */
+  .modal .fancybox-button {
+    display: none; }
+
+/* line 20, components/modal.scss */
+.modal-container {
+  background: #fff;
+  padding: 35px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 /* line 1, components/fixed-menu.scss */
 .fixed-menu {
