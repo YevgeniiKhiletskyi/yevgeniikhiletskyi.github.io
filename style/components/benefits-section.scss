@@ -1,4 +1,7 @@
 .benefits-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   background: url("../img/CHOCCO/benefits-section/pattern_sheet_1.png") left top 57% no-repeat;
 

@@ -1,0 +1,85 @@
+.products-section {
+  background: url("../img/CHOCCO/products/fon_1.png") center center/cover no-repeat;
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.products-menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 48px;
+  font-weight: bold;
+  padding-top: 10%;
+  padding-left: 10%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.products-link {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.products-item {
+  display: flex;
+  height: 100%;
+}
+
+.products-title {
+  display: flex;
+  width: 80px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.products-decor {
+  display: flex;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.products-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  white-space: nowrap;
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  
+}
+
+.products-content {
+  background: rgba(51, 53, 55, 0.9);
+  width: 0;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: width 0.7s;
+  -o-transition: width 0.7s;
+  transition: width 0.7s;
+  display: inline-flex;
+}
+
+.products-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  border: none;
+  background: transparent;
+}
+
+.products-content_text {
+  font-style: normal;
+  font-size: 16px;
+  width: 100%;
+  line-height: 1.2;
+  position: relative;
+  padding: 60px 30px;
+}

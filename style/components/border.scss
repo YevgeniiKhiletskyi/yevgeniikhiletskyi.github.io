@@ -1,13 +1,16 @@
 .border-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: 
-    url("../img/CHOCCO/border/pattern.png") center center no-repeat;
+    url("../img/CHOCCO/border/pattern.png") center center/cover no-repeat;
   
   
   &::before {
     content: 
     url("../img/CHOCCO/border/sheet_3.png");
     right: 3%;
-    bottom: 5%;
+    bottom: 12%;
     position: absolute;
   }
   
@@ -15,7 +18,7 @@
     content: 
     url("../img/CHOCCO/border/berry_2.png");
     left: 3%;
-    bottom: 5%;
+    bottom: 12%;
     position: absolute;
   }
 

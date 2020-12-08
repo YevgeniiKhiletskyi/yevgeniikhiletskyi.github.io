@@ -1,4 +1,7 @@
 .slider-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #F8FAF9;
 }
   
@@ -12,7 +15,7 @@
 //slider-controls
 .slider-btn {
   position: absolute;
-  top: 41%;
+  top: 27%;
   transform: translateY(50%);
   width: 27px;
   z-index: 20;
@@ -34,11 +37,11 @@
   } 
 
   @include tablets {
-    top: 38%;
+    top: 26%;
   }
 
   @include phones {
-    top: 36%;
+    top: 25.5%;
   }
 }
   
