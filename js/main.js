@@ -20,5 +20,5 @@ let menuOpenBurger = (function (buttonClass, menuClass) {
 
 })('#toggle', '#overlay');
 
-console.log(menuOpenBurger);
+//console.log(menuOpenBurger);
 menuOpenBurger.open();
