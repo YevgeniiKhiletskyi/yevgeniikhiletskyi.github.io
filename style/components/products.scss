@@ -52,7 +52,6 @@
   white-space: nowrap;
   writing-mode: tb-rl;
   transform: rotate(180deg);
-  
 }
 
 .products-content {
@@ -64,7 +63,10 @@
   -webkit-transition: width 0.7s;
   -o-transition: width 0.7s;
   transition: width 0.7s;
-  display: inline-flex;
+}
+
+.products-container {
+  padding: 60px 17px 30px 33px;
 }
 
 .products-close {
@@ -76,10 +78,11 @@
 }
 
 .products-content_text {
+  display: flex;
   font-style: normal;
   font-size: 16px;
   width: 100%;
-  line-height: 1.2;
+  line-height: 1.4;
   position: relative;
-  padding: 60px 30px;
 }
+
