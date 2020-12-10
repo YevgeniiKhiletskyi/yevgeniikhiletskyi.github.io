@@ -121,13 +121,13 @@ $("[data-scroll-to]").click( e => {
 if (isMobile) {
   $("body").swipe( {
     swipe: function(event, direction) {
-      const scroller = viewportScroller();
+      //const scroller = viewportScroller();
       let scrollDirection = "";
 
       if (direction === "up") scrollDirection = "next";
       if (direction === "down") scrollDirection = "prev";
 
-      scroller[scrollDirection]();
+      scrollViewport(scrollDirection);
     },
   });
 };
