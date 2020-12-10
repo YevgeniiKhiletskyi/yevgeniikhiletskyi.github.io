@@ -1,6 +1,15 @@
 .footer-container_content {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+
+  @include tablets {
+    justify-content: space-around;
+  }
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .container-phone_footer {

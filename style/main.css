@@ -1700,19 +1700,32 @@ button {
 .map {
   width: 100%;
   height: 92%; }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/map.scss */
+    .map {
+      height: 75%; } }
 
 /* line 1, components/footer.scss */
 .footer-container_content {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/footer.scss */
+    .footer-container_content {
+      justify-content: space-around; } }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/footer.scss */
+    .footer-container_content {
+      flex-direction: column; } }
 
-/* line 6, components/footer.scss */
+/* line 15, components/footer.scss */
 .container-phone_footer {
   margin: 0 auto;
   width: 1141px;
   display: flex; }
 
-/* line 12, components/footer.scss */
+/* line 21, components/footer.scss */
 .contacts-footer {
   display: flex;
   flex-direction: column;
@@ -1722,18 +1735,18 @@ button {
   padding-top: 20px;
   font-style: normal; }
 
-/* line 22, components/footer.scss */
+/* line 31, components/footer.scss */
 .contacts-workhours_footer {
   font-size: 21px; }
 
-/* line 26, components/footer.scss */
+/* line 35, components/footer.scss */
 .contacts-phone_footer {
   color: #497870;
   display: flex;
   align-items: center;
   font-size: 1.3333333333rem;
   text-decoration: none; }
-  /* line 33, components/footer.scss */
+  /* line 42, components/footer.scss */
   .contacts-phone_footer::before {
     content: url("../img/CHOCCO/container-logo/phone-green.png");
     margin-right: 0.2777777778rem; }
@@ -1741,10 +1754,13 @@ button {
 /* line 1, components/social.scss */
 .socials-list {
   display: flex;
-  align-items: center;
-  width: 15.5%; }
+  align-items: center; }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/social.scss */
+    .socials-list {
+      justify-content: center; } }
 
-/* line 7, components/social.scss */
+/* line 10, components/social.scss */
 .socials {
   display: block;
   text-decoration: none;
@@ -1752,19 +1768,19 @@ button {
   height: 36px;
   background: center center no-repeat; }
 
-/* line 15, components/social.scss */
+/* line 18, components/social.scss */
 .socials-item-icon_vk .socials {
   background-image: url("../img/CHOCCO/social/vk.png"); }
 
-/* line 19, components/social.scss */
+/* line 22, components/social.scss */
 .socials-item-icon_f .socials {
   background-image: url("../img/CHOCCO/social/f.png"); }
 
-/* line 23, components/social.scss */
+/* line 26, components/social.scss */
 .socials-item-icon_in .socials {
   background-image: url("../img/CHOCCO/social/in.png"); }
 
-/* line 27, components/social.scss */
+/* line 30, components/social.scss */
 .socials-item-icon_tv .socials {
   background-image: url("../img/CHOCCO/social/tv.png"); }
 

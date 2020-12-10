@@ -1,7 +1,10 @@
 .socials-list {
   display: flex;
   align-items: center;
-  width: 15.5%;
+
+  @include phones {
+    justify-content: center;
+  }
 }
 
 .socials {
