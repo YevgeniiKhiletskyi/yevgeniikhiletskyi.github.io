@@ -1,0 +1,30 @@
+.socials-list {
+  display: flex;
+  align-items: center;
+  width: 15.5%;
+}
+
+.socials {
+  display: block;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  background: center center no-repeat;
+}
+
+.socials-item-icon_vk .socials {
+  background-image: url("../img/CHOCCO/social/vk.png");
+}
+
+.socials-item-icon_f .socials {
+  background-image: url("../img/CHOCCO/social/f.png");
+}
+
+.socials-item-icon_in .socials {
+  background-image: url("../img/CHOCCO/social/in.png");
+}
+
+.socials-item-icon_tv .socials {
+  background-image: url("../img/CHOCCO/social/tv.png");
+}
+

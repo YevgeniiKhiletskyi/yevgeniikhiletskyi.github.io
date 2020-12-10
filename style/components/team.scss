@@ -11,6 +11,10 @@
     top: -21%;
     position: absolute;
     z-index: 5;
+
+    @include phones {
+      z-index: 0;
+    }
   }
 
   &::after {

@@ -963,7 +963,11 @@ footer {
     top: -21%;
     position: absolute;
     z-index: 5; }
-  /* line 16, components/team.scss */
+    @media screen and (max-width: 480px) {
+      /* line 7, components/team.scss */
+      .team-section::before {
+        z-index: 0; } }
+  /* line 20, components/team.scss */
   .team-section::after {
     content: url("../img/CHOCCO/team/berry_1.png");
     left: 3%;
@@ -971,13 +975,13 @@ footer {
     position: absolute;
     z-index: 5; }
 
-/* line 26, components/team.scss */
+/* line 30, components/team.scss */
 .team {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-/* line 32, components/team.scss */
+/* line 36, components/team.scss */
 .team-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -986,7 +990,7 @@ footer {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   @media screen and (max-width: 768px) {
-    /* line 32, components/team.scss */
+    /* line 36, components/team.scss */
     .team-list {
       padding: 0 10%;
       flex-direction: column;
@@ -996,7 +1000,7 @@ footer {
       -ms-flex-direction: column;
       -webkit-box-align: center; } }
 
-/* line 51, components/team.scss */
+/* line 55, components/team.scss */
 .team-item {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -1006,7 +1010,7 @@ footer {
   max-width: 231px;
   position: relative; }
   @media screen and (max-width: 768px) {
-    /* line 51, components/team.scss */
+    /* line 55, components/team.scss */
     .team-item {
       -webkit-box-flex: initial;
       -ms-flex: initial;
@@ -1014,32 +1018,32 @@ footer {
       margin-bottom: 35px;
       margin-right: 0; } }
 
-/* line 71, components/team.scss */
+/* line 75, components/team.scss */
 .team-member {
   height: 288px;
   margin-bottom: 20px; }
 
-/* line 77, components/team.scss */
+/* line 81, components/team.scss */
 .team-desktop .team-content {
   position: absolute;
   top: 100%; }
 @media screen and (max-width: 768px) {
-  /* line 76, components/team.scss */
+  /* line 80, components/team.scss */
   .team-desktop {
     display: none; } }
 
-/* line 87, components/team.scss */
+/* line 91, components/team.scss */
 .team-phone {
   display: none; }
-  /* line 90, components/team.scss */
+  /* line 94, components/team.scss */
   .team-phone .team-item {
     margin-bottom: 0; }
   @media screen and (max-width: 768px) {
-    /* line 87, components/team.scss */
+    /* line 91, components/team.scss */
     .team-phone {
       display: flex; } }
 
-/* line 102, components/team.scss */
+/* line 106, components/team.scss */
 .team-title {
   color: #000000;
   display: -webkit-inline-box;
@@ -1055,20 +1059,20 @@ footer {
   font-weight: bold;
   margin-bottom: 20px; }
 
-/* line 118, components/team.scss */
+/* line 122, components/team.scss */
 .team-content {
   overflow: hidden;
   -webkit-transition: height 0.3s;
   -o-transition: height 0.3s;
   transition: height 0.3s;
   height: 0; }
-  /* line 126, components/team.scss */
+  /* line 130, components/team.scss */
   .team-content_block.team-content_bottom {
     margin-bottom: 20px; }
-  /* line 130, components/team.scss */
+  /* line 134, components/team.scss */
   .team-content_block .team-content_job {
     color: #000000; }
-  /* line 134, components/team.scss */
+  /* line 138, components/team.scss */
   .team-content_block .team-content_text {
     color: #666666;
     font-weight: 300; }
@@ -1386,43 +1390,65 @@ button {
     bottom: 20%;
     position: absolute;
     z-index: 5; }
-  /* line 30, components/player.scss */
+    @media screen and (max-width: 480px) {
+      /* line 21, components/player.scss */
+      .player-section::after {
+        display: none; } }
+  /* line 34, components/player.scss */
   .player-section .player-container {
     background: url("../img/CHOCCO/player/pattern_2.png") right top 17%/15% auto no-repeat; }
-    /* line 33, components/player.scss */
+    @media screen and (max-width: 480px) {
+      /* line 34, components/player.scss */
+      .player-section .player-container {
+        background: none; } }
+    /* line 41, components/player.scss */
     .player-section .player-container .player-title {
       padding-top: 30px;
       text-align: center; }
-    /* line 38, components/player.scss */
+    /* line 46, components/player.scss */
     .player-section .player-container .player-section_container {
-      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column; }
-      /* line 45, components/player.scss */
+      /* line 52, components/player.scss */
       .player-section .player-container .player-section_container .player {
         position: relative;
         max-width: 660px; }
-        /* line 49, components/player.scss */
+        /* line 56, components/player.scss */
         .player-section .player-container .player-section_container .player #player {
           min-width: 660px;
           max-width: 660px;
           min-height: 370px; }
-        /* line 55, components/player.scss */
+          @media screen and (max-width: 480px) {
+            /* line 56, components/player.scss */
+            .player-section .player-container .player-section_container .player #player {
+              min-width: 340px;
+              max-width: 340px;
+              min-height: 210px; } }
+        /* line 68, components/player.scss */
         .player-section .player-container .player-section_container .player .player-pic {
           width: 12%;
           position: absolute;
           left: 307px;
           top: 149px;
           cursor: pointer; }
-      /* line 64, components/player.scss */
+          @media screen and (max-width: 480px) {
+            /* line 68, components/player.scss */
+            .player-section .player-container .player-section_container .player .player-pic {
+              left: 157px;
+              top: 83px; } }
+      /* line 82, components/player.scss */
       .player-section .player-container .player-section_container .player-controls {
         width: 660px;
         height: 35px;
         background-color: #3e3e3e;
         margin-top: -11px;
         display: flex; }
+        @media screen and (max-width: 480px) {
+          /* line 82, components/player.scss */
+          .player-section .player-container .player-section_container .player-controls {
+            width: 341px; } }
 
 /* line 1, components/player-controls.scss */
 .player-duration {
@@ -1433,7 +1459,11 @@ button {
     width: 10%;
     padding: 5px 20px;
     cursor: pointer; }
-  /* line 11, components/player-controls.scss */
+    @media screen and (max-width: 480px) {
+      /* line 5, components/player-controls.scss */
+      .player-duration .player-duration_pic {
+        padding: 5px 4px; } }
+  /* line 15, components/player-controls.scss */
   .player-duration .duration-length {
     width: 444px;
     height: 4px;
@@ -1442,14 +1472,24 @@ button {
     -webkit-appearance: none;
     appearance: none;
     outline: none; }
+    @media screen and (max-width: 480px) {
+      /* line 15, components/player-controls.scss */
+      .player-duration .duration-length {
+        width: 167px;
+        margin-left: 22px; } }
 
-/* line 22, components/player-controls.scss */
+/* line 31, components/player-controls.scss */
 .duration-length_other {
   width: 69px;
   height: 8px;
   margin-left: 34px; }
+  @media screen and (max-width: 480px) {
+    /* line 31, components/player-controls.scss */
+    .duration-length_other {
+      height: 10px;
+      margin-left: 17px; } }
 
-/* line 28, components/player-controls.scss */
+/* line 42, components/player-controls.scss */
 .duration__length::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -1655,6 +1695,78 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+/* line 1, components/map.scss */
+.map {
+  width: 100%;
+  height: 92%; }
+
+/* line 1, components/footer.scss */
+.footer-container_content {
+  display: flex;
+  justify-content: space-between; }
+
+/* line 6, components/footer.scss */
+.container-phone_footer {
+  margin: 0 auto;
+  width: 1141px;
+  display: flex; }
+
+/* line 12, components/footer.scss */
+.contacts-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #292929;
+  padding-top: 20px;
+  font-style: normal; }
+
+/* line 22, components/footer.scss */
+.contacts-workhours_footer {
+  font-size: 21px; }
+
+/* line 26, components/footer.scss */
+.contacts-phone_footer {
+  color: #497870;
+  display: flex;
+  align-items: center;
+  font-size: 1.3333333333rem;
+  text-decoration: none; }
+  /* line 33, components/footer.scss */
+  .contacts-phone_footer::before {
+    content: url("../img/CHOCCO/container-logo/phone-green.png");
+    margin-right: 0.2777777778rem; }
+
+/* line 1, components/social.scss */
+.socials-list {
+  display: flex;
+  align-items: center;
+  width: 15.5%; }
+
+/* line 7, components/social.scss */
+.socials {
+  display: block;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  background: center center no-repeat; }
+
+/* line 15, components/social.scss */
+.socials-item-icon_vk .socials {
+  background-image: url("../img/CHOCCO/social/vk.png"); }
+
+/* line 19, components/social.scss */
+.socials-item-icon_f .socials {
+  background-image: url("../img/CHOCCO/social/f.png"); }
+
+/* line 23, components/social.scss */
+.socials-item-icon_in .socials {
+  background-image: url("../img/CHOCCO/social/in.png"); }
+
+/* line 27, components/social.scss */
+.socials-item-icon_tv .socials {
+  background-image: url("../img/CHOCCO/social/tv.png"); }
 
 /* line 1, components/fixed-menu.scss */
 .fixed-menu {

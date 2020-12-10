@@ -1,0 +1,40 @@
+.footer-container_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-phone_footer {
+  margin: 0 auto;
+  width: 1141px;
+  display: flex;
+}
+
+.contacts-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #292929;
+  padding-top: 20px;
+  font-style: normal;
+}
+
+.contacts-workhours_footer {
+  font-size: 21px;
+}
+
+.contacts-phone_footer {
+  color: $green;
+  display: flex;
+  align-items: center;
+  font-size: rem(24px);
+  text-decoration: none;
+
+  &::before{
+    content: url("../img/CHOCCO/container-logo/phone-green.png");
+    margin-right: rem(5px);
+  } 
+}
+
+
+
