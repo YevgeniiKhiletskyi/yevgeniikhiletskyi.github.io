@@ -1,0 +1,15 @@
+.player-sound {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+
+  .player-sound_pic {
+    cursor: pointer;
+  }
+  
+  .sound__volume {
+    margin-left: 30px;   
+    margin-top: -5px; 
+  }
+}
+

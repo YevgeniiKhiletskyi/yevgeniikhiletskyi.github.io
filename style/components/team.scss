@@ -2,6 +2,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+
+  &::before {
+    content:
+    url("../img/CHOCCO/team/PatternBerry_1.png");
+    right: 0;
+    top: -21%;
+    position: absolute;
+    z-index: 5;
+  }
+
+  &::after {
+    content: 
+    url("../img/CHOCCO/team/berry_1.png");
+    left: 3%;
+    bottom: -5%;
+    position: absolute;
+    z-index: 5;
+  }
 }
 
 .team {

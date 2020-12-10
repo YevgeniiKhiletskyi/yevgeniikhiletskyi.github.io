@@ -1,0 +1,36 @@
+.player-duration {
+  display: flex;
+  align-items: center;
+
+  .player-duration_pic {
+    width: 10%;
+    padding: 5px 20px;
+    cursor: pointer;
+  }
+
+  .duration-length {
+    width: 444px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #626262;
+    -webkit-appearance: none;
+    appearance: none;   
+    outline: none;
+  }
+}
+
+.duration-length_other {
+  width: 69px;
+  height: 8px;
+  margin-left: 34px;
+}
+
+.duration__length::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #626262;    
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;    
+}

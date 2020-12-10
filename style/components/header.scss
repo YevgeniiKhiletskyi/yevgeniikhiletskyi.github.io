@@ -4,8 +4,7 @@
   justify-content: center;
   height: 100vh;
   min-height: rem(650px);
-  transform: translateY();
-
+ 
   @include phones {
     align-items: center;
   }

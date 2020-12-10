@@ -1,0 +1,75 @@
+.player-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F8FAF9;
+  position: relative;
+  
+  &::before {
+    content:
+    url("../img/CHOCCO/player/blackberry_1.png");
+    right: 0;
+    bottom: -10%;
+    position: absolute;
+    z-index: 5;
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &::after {
+    content:
+    url("../img/CHOCCO/player/pattern_1.png");
+    left: 10%;
+    bottom: 20%;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .player-container {
+    background: url("../img/CHOCCO/player/pattern_2.png") right top 17% / 15% auto no-repeat;
+
+    .player-title {
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    .player-section_container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .player {
+        position: relative;
+        max-width: 660px;
+
+        #player {
+          min-width: 660px;
+          max-width: 660px;
+          min-height: 370px;
+        }
+
+        .player-pic {
+          width: 12%;
+          position: absolute;
+          left: 307px;
+          top: 149px;
+          cursor: pointer;
+        }
+      }
+
+      .player-controls {
+        width: 660px;
+        height: 35px;
+        background-color: #3e3e3e;
+        margin-top: -11px;
+        display: flex;
+      }
+    }
+  }
+}
+
+
