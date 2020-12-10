@@ -1530,11 +1530,11 @@ button {
     .fixed-menu {
       display: none; } }
 
-/* line 14, components/fixed-menu.scss */
+/* line 13, components/fixed-menu.scss */
 .fixed-list .fixed-item {
   margin-bottom: 0.2777777778rem;
   position: relative; }
-  /* line 18, components/fixed-menu.scss */
+  /* line 17, components/fixed-menu.scss */
   .fixed-list .fixed-item::before {
     content: "";
     width: 0.3333333333rem;
@@ -1545,11 +1545,11 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  /* line 31, components/fixed-menu.scss */
+  /* line 30, components/fixed-menu.scss */
   .fixed-list .fixed-item_dark::before {
     content: "";
     background: #0b4d3c; }
-  /* line 37, components/fixed-menu.scss */
+  /* line 36, components/fixed-menu.scss */
   .fixed-list .fixed-item .fixed-link {
     width: 0.8888888889rem;
     height: 0.8888888889rem;
@@ -1557,7 +1557,7 @@ button {
     border: 0.0555555556rem solid transparent;
     display: block;
     position: relative; }
-    /* line 46, components/fixed-menu.scss */
+    /* line 44, components/fixed-menu.scss */
     .fixed-list .fixed-item .fixed-link::before {
       content: "";
       width: 0.3333333333rem;
@@ -1567,7 +1567,7 @@ button {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-    /* line 57, components/fixed-menu.scss */
+    /* line 55, components/fixed-menu.scss */
     .fixed-list .fixed-item .fixed-link_active {
       border-color: #fff; }
 

@@ -4,6 +4,9 @@ const upScrolle = -100;
 const sideMenu = $(".fixed-item");
 const menuLinks = sideMenu.find(".fixed-link");
 
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
 let inScroll = false;
 
 //на секцию навешиваем класс 'active'
@@ -102,9 +105,10 @@ $(window).on("keydown", e => {
   }
 });
 
+$("wrapper").on("touchmove", e => e.preventDefault());
 
-//боковая миню
-$("[data-scroll-to").click( e => {
+//боковое миню
+$("[data-scroll-to]").click( e => {
   e.preventDefault();
 
   const $this = $(e.currentTarget);
@@ -114,11 +118,17 @@ $("[data-scroll-to").click( e => {
   performTransition(reqSection.index());
 });
 
-$("body").swipe( {
-  swipe: function(
-    event, 
-    direction,
-  ) {
-    alert(direction);  
-  },
-});
+if (isMobile) {
+  $("body").swipe( {
+    swipe: function(event, direction) {
+      const scroller = viewportScroller();
+      let scrollDirection = "";
+
+      if (direction === "up") scrollDirection = "next";
+      if (direction === "down") scrollDirection = "prev";
+
+      scroller[scrollDirection]();
+    },
+  });
+};
+
