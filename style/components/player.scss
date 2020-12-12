@@ -13,8 +13,8 @@
     position: absolute;
     z-index: 5;
 
-    @include tablets {
-      display: none;
+    @include phones {
+      z-index: 1;
     }
   }
 
@@ -24,24 +24,10 @@
     left: 10%;
     bottom: 20%;
     position: absolute;
-    z-index: 5;
-
-    @include phones{
-      display: none;
-    }
   }
 
   .player-container {
     background: url("../img/CHOCCO/player/pattern_2.png") right top 17% / 15% auto no-repeat;
-
-    @include phones {
-      background: none;
-    }
-
-    .player-title {
-      padding-top: 30px;
-      text-align: center;
-    }
 
     .player-section_container {
       display: flex;
@@ -50,48 +36,37 @@
       flex-direction: column;
 
       .player {
+        overflow: hidden;
+        display: flex;
         position: relative;
-        max-width: 660px;
+        flex-direction: column;
+        max-width: 100%;
+        z-index: 3;
 
         #player {
-          min-width: 660px;
-          max-width: 660px;
-          min-height: 370px;
-
-          @include phones {
-            min-width: 340px;
-            max-width: 340px;
-            min-height: 210px;
-          }
+          display: flex;
+          object-fit: cover;
+          max-width: 100%;
         }
 
         .player-pic {
           width: 12%;
           position: absolute;
-          left: 307px;
-          top: 149px;
+          left: 50%;
+          top: 37%;
           cursor: pointer;
-
-          @include phones {
-            left: 157px;
-            top: 83px;
-          }
         }
       }
 
       .player-controls {
-        width: 660px;
         height: 35px;
         background-color: #3e3e3e;
-        margin-top: -11px;
+        margin-top: -1px;
         display: flex;
-
-        @include phones {
-          width: 341px;
-        }
       }
     }
   }
 }
+
 
 

@@ -1379,117 +1379,79 @@ button {
     bottom: -10%;
     position: absolute;
     z-index: 5; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
       /* line 8, components/player.scss */
       .player-section::before {
-        display: none; } }
+        z-index: 1; } }
   /* line 21, components/player.scss */
   .player-section::after {
     content: url("../img/CHOCCO/player/pattern_1.png");
     left: 10%;
     bottom: 20%;
-    position: absolute;
-    z-index: 5; }
-    @media screen and (max-width: 480px) {
-      /* line 21, components/player.scss */
-      .player-section::after {
-        display: none; } }
-  /* line 34, components/player.scss */
+    position: absolute; }
+  /* line 29, components/player.scss */
   .player-section .player-container {
     background: url("../img/CHOCCO/player/pattern_2.png") right top 17%/15% auto no-repeat; }
-    @media screen and (max-width: 480px) {
-      /* line 34, components/player.scss */
-      .player-section .player-container {
-        background: none; } }
-    /* line 41, components/player.scss */
-    .player-section .player-container .player-title {
-      padding-top: 30px;
-      text-align: center; }
-    /* line 46, components/player.scss */
+    /* line 32, components/player.scss */
     .player-section .player-container .player-section_container {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column; }
-      /* line 52, components/player.scss */
+      /* line 38, components/player.scss */
       .player-section .player-container .player-section_container .player {
+        overflow: hidden;
+        display: flex;
         position: relative;
-        max-width: 660px; }
-        /* line 56, components/player.scss */
+        flex-direction: column;
+        max-width: 100%;
+        z-index: 3; }
+        /* line 46, components/player.scss */
         .player-section .player-container .player-section_container .player #player {
-          min-width: 660px;
-          max-width: 660px;
-          min-height: 370px; }
-          @media screen and (max-width: 480px) {
-            /* line 56, components/player.scss */
-            .player-section .player-container .player-section_container .player #player {
-              min-width: 340px;
-              max-width: 340px;
-              min-height: 210px; } }
-        /* line 68, components/player.scss */
+          display: flex;
+          object-fit: cover;
+          max-width: 100%; }
+        /* line 52, components/player.scss */
         .player-section .player-container .player-section_container .player .player-pic {
           width: 12%;
           position: absolute;
-          left: 307px;
-          top: 149px;
+          left: 50%;
+          top: 37%;
           cursor: pointer; }
-          @media screen and (max-width: 480px) {
-            /* line 68, components/player.scss */
-            .player-section .player-container .player-section_container .player .player-pic {
-              left: 157px;
-              top: 83px; } }
-      /* line 82, components/player.scss */
+      /* line 61, components/player.scss */
       .player-section .player-container .player-section_container .player-controls {
-        width: 660px;
         height: 35px;
         background-color: #3e3e3e;
-        margin-top: -11px;
+        margin-top: -1px;
         display: flex; }
-        @media screen and (max-width: 480px) {
-          /* line 82, components/player.scss */
-          .player-section .player-container .player-section_container .player-controls {
-            width: 341px; } }
 
 /* line 1, components/player-controls.scss */
 .player-duration {
   display: flex;
-  align-items: center; }
-  /* line 5, components/player-controls.scss */
+  align-items: center;
+  width: 72%; }
+  /* line 6, components/player-controls.scss */
   .player-duration .player-duration_pic {
-    width: 10%;
+    width: 57px;
     padding: 5px 20px;
     cursor: pointer; }
-    @media screen and (max-width: 480px) {
-      /* line 5, components/player-controls.scss */
-      .player-duration .player-duration_pic {
-        padding: 5px 4px; } }
-  /* line 15, components/player-controls.scss */
+  /* line 12, components/player-controls.scss */
   .player-duration .duration-length {
-    width: 444px;
+    width: 100%;
     height: 4px;
     border-radius: 1px;
     background-color: #626262;
     -webkit-appearance: none;
     appearance: none;
     outline: none; }
-    @media screen and (max-width: 480px) {
-      /* line 15, components/player-controls.scss */
-      .player-duration .duration-length {
-        width: 167px;
-        margin-left: 22px; } }
 
-/* line 31, components/player-controls.scss */
+/* line 23, components/player-controls.scss */
 .duration-length_other {
-  width: 69px;
+  width: 63%;
   height: 8px;
-  margin-left: 34px; }
-  @media screen and (max-width: 480px) {
-    /* line 31, components/player-controls.scss */
-    .duration-length_other {
-      height: 10px;
-      margin-left: 17px; } }
+  margin-left: 18px; }
 
-/* line 42, components/player-controls.scss */
+/* line 29, components/player-controls.scss */
 .duration__length::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -1501,16 +1463,14 @@ button {
 
 /* line 1, components/player-sound.scss */
 .player-sound {
+  width: 28%;
   display: flex;
   align-items: center;
-  padding-left: 30px; }
-  /* line 6, components/player-sound.scss */
+  padding-left: 5%; }
+  /* line 7, components/player-sound.scss */
   .player-sound .player-sound_pic {
+    width: 19px;
     cursor: pointer; }
-  /* line 10, components/player-sound.scss */
-  .player-sound .sound__volume {
-    margin-left: 30px;
-    margin-top: -5px; }
 
 /* line 1, components/border.scss */
 .border-section {

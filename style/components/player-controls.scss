@@ -1,42 +1,29 @@
 .player-duration {
   display: flex;
   align-items: center;
+  width: 72%;
 
   .player-duration_pic {
-    width: 10%;
+    width: 57px;
     padding: 5px 20px;
     cursor: pointer;
-
-    @include phones {
-      padding: 5px 4px;
-    }
   }
 
   .duration-length {
-    width: 444px;
+    width: 100%;
     height: 4px;
     border-radius: 1px;
     background-color: #626262;
     -webkit-appearance: none;
     appearance: none;   
     outline: none;
-
-    @include phones {
-      width: 167px;
-      margin-left: 22px;
-    }
   }
 }
 
 .duration-length_other {
-  width: 69px;
+  width: 63%;
   height: 8px;
-  margin-left: 34px;
-
-  @include phones {
-    height: 10px;
-    margin-left: 17px;
-  }
+  margin-left: 18px;
 }
 
 .duration__length::-webkit-slider-thumb {
